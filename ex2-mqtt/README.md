@@ -194,7 +194,7 @@ Trong mô phỏng đầy đủ:
 - Mỗi thiết bị gửi 10 tin nhắn định kỳ
 - Hệ thống xử lý hơn 1000 tin nhắn qua MQTT broker
 
-Xem kết quả tại đây: ![Output Directory](./ex2-mqtt/logs)
+Xem kết quả tại đây: [Logs Directory](./logs/)
 
 ## 7. KẾT LUẬN
 
