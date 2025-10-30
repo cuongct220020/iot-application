@@ -1,0 +1,42 @@
+[2025-10-30 23:28:25,080] [INFO] [statistics:28] - REAL-TIME STATISTICS
+[2025-10-30 23:28:25,080] [INFO] [statistics:30] - Total messages published: 194
+[2025-10-30 23:28:25,080] [INFO] [statistics:31] - Total messages received:  582
+[2025-10-30 23:28:25,080] [INFO] [statistics:32] - Active publishers:        100
+[2025-10-30 23:28:25,080] [INFO] [statistics:33] - Active subscribers:       3
+[2025-10-30 23:28:25,080] [INFO] [statistics:34] - Errors:                   0
+[2025-10-30 23:28:35,083] [INFO] [statistics:28] - REAL-TIME STATISTICS
+[2025-10-30 23:28:35,084] [INFO] [statistics:30] - Total messages published: 394
+[2025-10-30 23:28:35,084] [INFO] [statistics:31] - Total messages received:  1182
+[2025-10-30 23:28:35,084] [INFO] [statistics:32] - Active publishers:        100
+[2025-10-30 23:28:35,084] [INFO] [statistics:33] - Active subscribers:       3
+[2025-10-30 23:28:35,084] [INFO] [statistics:34] - Errors:                   0
+[2025-10-30 23:28:45,089] [INFO] [statistics:28] - REAL-TIME STATISTICS
+[2025-10-30 23:28:45,089] [INFO] [statistics:30] - Total messages published: 593
+[2025-10-30 23:28:45,089] [INFO] [statistics:31] - Total messages received:  1779
+[2025-10-30 23:28:45,089] [INFO] [statistics:32] - Active publishers:        100
+[2025-10-30 23:28:45,089] [INFO] [statistics:33] - Active subscribers:       3
+[2025-10-30 23:28:45,089] [INFO] [statistics:34] - Errors:                   0
+[2025-10-30 23:28:55,094] [INFO] [statistics:28] - REAL-TIME STATISTICS
+[2025-10-30 23:28:55,094] [INFO] [statistics:30] - Total messages published: 790
+[2025-10-30 23:28:55,094] [INFO] [statistics:31] - Total messages received:  2370
+[2025-10-30 23:28:55,094] [INFO] [statistics:32] - Active publishers:        100
+[2025-10-30 23:28:55,094] [INFO] [statistics:33] - Active subscribers:       3
+[2025-10-30 23:28:55,094] [INFO] [statistics:34] - Errors:                   0
+[2025-10-30 23:29:05,097] [INFO] [statistics:28] - REAL-TIME STATISTICS
+[2025-10-30 23:29:05,097] [INFO] [statistics:30] - Total messages published: 989
+[2025-10-30 23:29:05,097] [INFO] [statistics:31] - Total messages received:  2967
+[2025-10-30 23:29:05,097] [INFO] [statistics:32] - Active publishers:        96
+[2025-10-30 23:29:05,097] [INFO] [statistics:33] - Active subscribers:       3
+[2025-10-30 23:29:05,097] [INFO] [statistics:34] - Errors:                   0
+[2025-10-30 23:29:15,097] [INFO] [statistics:28] - REAL-TIME STATISTICS
+[2025-10-30 23:29:15,097] [INFO] [statistics:30] - Total messages published: 1000
+[2025-10-30 23:29:15,097] [INFO] [statistics:31] - Total messages received:  3000
+[2025-10-30 23:29:15,097] [INFO] [statistics:32] - Active publishers:        0
+[2025-10-30 23:29:15,097] [INFO] [statistics:33] - Active subscribers:       3
+[2025-10-30 23:29:15,097] [INFO] [statistics:34] - Errors:                   0
+[2025-10-30 23:29:21,700] [INFO] [statistics:28] - REAL-TIME STATISTICS
+[2025-10-30 23:29:21,700] [INFO] [statistics:30] - Total messages published: 1000
+[2025-10-30 23:29:21,700] [INFO] [statistics:31] - Total messages received:  3000
+[2025-10-30 23:29:21,700] [INFO] [statistics:32] - Active publishers:        0
+[2025-10-30 23:29:21,700] [INFO] [statistics:33] - Active subscribers:       3
+[2025-10-30 23:29:21,701] [INFO] [statistics:34] - Errors:                   0

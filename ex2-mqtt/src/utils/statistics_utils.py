@@ -1,5 +1,9 @@
 import logging
 import threading
+from src.utils.logger_utils import configure_logger
+
+# Get a logger specifically for statistics
+stats_logger = configure_logger('statistics', log_file_name='statistics.log')
 
 class Statistics:
     def __init__(self):
@@ -17,17 +21,17 @@ class Statistics:
         with self.lock:
             self.stats[key] += value
 
-    def print_stats(self):
+    def print_stats(self, logger=stats_logger):
         """Print statistics"""
         with self.lock:
             print("\n" + "=" * 70)
-            logging.info("REAL-TIME STATISTICS")
+            stats_logger.info("REAL-TIME STATISTICS")
             print("=" * 70)
-            logging.info(f"Total messages published: {self.stats['total_published']}")
-            logging.info(f"Total messages received:  {self.stats['total_received']}")
-            logging.info(f"Active publishers:        {self.stats['active_publishers']}")
-            logging.info(f"Active subscribers:       {self.stats['active_subscribers']}")
-            logging.info(f"Errors:                   {self.stats['errors']}")
+            stats_logger.info(f"Total messages published: {self.stats['total_published']}")
+            stats_logger.info(f"Total messages received:  {self.stats['total_received']}")
+            stats_logger.info(f"Active publishers:        {self.stats['active_publishers']}")
+            stats_logger.info(f"Active subscribers:       {self.stats['active_subscribers']}")
+            stats_logger.info(f"Errors:                   {self.stats['errors']}")
             print("=" * 70 + "\n")
 
     def get_stats(self):

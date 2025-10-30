@@ -1,0 +1,124 @@
+[2025-10-30 23:28:13,071] [INFO] [cli.commands:22] - ======================================================================
+[2025-10-30 23:28:13,071] [INFO] [cli.commands:23] - MQTT DEVICES SIMULATION PROGRAM
+[2025-10-30 23:28:13,071] [INFO] [cli.commands:24] - ======================================================================
+[2025-10-30 23:28:13,071] [INFO] [cli.commands:25] - Broker: localhost:1883
+[2025-10-30 23:28:13,071] [INFO] [cli.commands:26] - Mode: full
+[2025-10-30 23:28:13,071] [INFO] [cli.commands:29] - Number of publishers: 100
+[2025-10-30 23:28:13,071] [INFO] [cli.commands:31] - Number of subscribers: 3
+[2025-10-30 23:28:13,071] [INFO] [cli.commands:33] - Topic pattern: iot/environment/{location}/{sensor_type}
+[2025-10-30 23:28:13,071] [INFO] [cli.commands:34] - ======================================================================
+[2025-10-30 23:28:13,071] [INFO] [src.simulation:121] - RUNNING FULL SIMULATION
+[2025-10-30 23:28:15,077] [INFO] [src.simulation:42] - 
+Starting simulation for 100 devices...
+[2025-10-30 23:28:15,078] [INFO] [src.simulation:43] - Each device sends 10 messages, every 5s
+[2025-10-30 23:28:15,078] [INFO] [src.simulation:46] - Publishing to topics under: iot/environment/{location}/{sensor_type}
+[2025-10-30 23:28:20,477] [INFO] [src.simulation:105] - Started 100 publishers
+
+[2025-10-30 23:29:11,696] [INFO] [src.simulation:111] - 
+All publishers finished!
+[2025-10-30 23:29:11,696] [INFO] [src.simulation:135] - 
+Waiting for all messages to be received...
+[2025-10-30 23:29:21,701] [INFO] [src.simulation:142] - 
+SUMMARY BY DEVICE (from first subscriber):
+[2025-10-30 23:29:21,701] [INFO] [src.simulation:147] -   Device   1: Received  10 messages
+[2025-10-30 23:29:21,701] [INFO] [src.simulation:147] -   Device   2: Received  10 messages
+[2025-10-30 23:29:21,701] [INFO] [src.simulation:147] -   Device   3: Received  10 messages
+[2025-10-30 23:29:21,701] [INFO] [src.simulation:147] -   Device   4: Received  10 messages
+[2025-10-30 23:29:21,701] [INFO] [src.simulation:147] -   Device   5: Received  10 messages
+[2025-10-30 23:29:21,701] [INFO] [src.simulation:147] -   Device   6: Received  10 messages
+[2025-10-30 23:29:21,701] [INFO] [src.simulation:147] -   Device   7: Received  10 messages
+[2025-10-30 23:29:21,701] [INFO] [src.simulation:147] -   Device   8: Received  10 messages
+[2025-10-30 23:29:21,701] [INFO] [src.simulation:147] -   Device   9: Received  10 messages
+[2025-10-30 23:29:21,701] [INFO] [src.simulation:147] -   Device  10: Received  10 messages
+[2025-10-30 23:29:21,701] [INFO] [src.simulation:147] -   Device  11: Received  10 messages
+[2025-10-30 23:29:21,701] [INFO] [src.simulation:147] -   Device  12: Received  10 messages
+[2025-10-30 23:29:21,701] [INFO] [src.simulation:147] -   Device  13: Received  10 messages
+[2025-10-30 23:29:21,701] [INFO] [src.simulation:147] -   Device  14: Received  10 messages
+[2025-10-30 23:29:21,701] [INFO] [src.simulation:147] -   Device  15: Received  10 messages
+[2025-10-30 23:29:21,701] [INFO] [src.simulation:147] -   Device  16: Received  10 messages
+[2025-10-30 23:29:21,701] [INFO] [src.simulation:147] -   Device  17: Received  10 messages
+[2025-10-30 23:29:21,701] [INFO] [src.simulation:147] -   Device  18: Received  10 messages
+[2025-10-30 23:29:21,701] [INFO] [src.simulation:147] -   Device  19: Received  10 messages
+[2025-10-30 23:29:21,701] [INFO] [src.simulation:147] -   Device  20: Received  10 messages
+[2025-10-30 23:29:21,701] [INFO] [src.simulation:147] -   Device  21: Received  10 messages
+[2025-10-30 23:29:21,701] [INFO] [src.simulation:147] -   Device  22: Received  10 messages
+[2025-10-30 23:29:21,701] [INFO] [src.simulation:147] -   Device  23: Received  10 messages
+[2025-10-30 23:29:21,701] [INFO] [src.simulation:147] -   Device  24: Received  10 messages
+[2025-10-30 23:29:21,701] [INFO] [src.simulation:147] -   Device  25: Received  10 messages
+[2025-10-30 23:29:21,701] [INFO] [src.simulation:147] -   Device  26: Received  10 messages
+[2025-10-30 23:29:21,701] [INFO] [src.simulation:147] -   Device  27: Received  10 messages
+[2025-10-30 23:29:21,701] [INFO] [src.simulation:147] -   Device  28: Received  10 messages
+[2025-10-30 23:29:21,701] [INFO] [src.simulation:147] -   Device  29: Received  10 messages
+[2025-10-30 23:29:21,701] [INFO] [src.simulation:147] -   Device  30: Received  10 messages
+[2025-10-30 23:29:21,701] [INFO] [src.simulation:147] -   Device  31: Received  10 messages
+[2025-10-30 23:29:21,701] [INFO] [src.simulation:147] -   Device  32: Received  10 messages
+[2025-10-30 23:29:21,701] [INFO] [src.simulation:147] -   Device  33: Received  10 messages
+[2025-10-30 23:29:21,701] [INFO] [src.simulation:147] -   Device  34: Received  10 messages
+[2025-10-30 23:29:21,701] [INFO] [src.simulation:147] -   Device  35: Received  10 messages
+[2025-10-30 23:29:21,701] [INFO] [src.simulation:147] -   Device  36: Received  10 messages
+[2025-10-30 23:29:21,701] [INFO] [src.simulation:147] -   Device  37: Received  10 messages
+[2025-10-30 23:29:21,701] [INFO] [src.simulation:147] -   Device  38: Received  10 messages
+[2025-10-30 23:29:21,701] [INFO] [src.simulation:147] -   Device  39: Received  10 messages
+[2025-10-30 23:29:21,701] [INFO] [src.simulation:147] -   Device  40: Received  10 messages
+[2025-10-30 23:29:21,701] [INFO] [src.simulation:147] -   Device  41: Received  10 messages
+[2025-10-30 23:29:21,701] [INFO] [src.simulation:147] -   Device  42: Received  10 messages
+[2025-10-30 23:29:21,702] [INFO] [src.simulation:147] -   Device  43: Received  10 messages
+[2025-10-30 23:29:21,702] [INFO] [src.simulation:147] -   Device  44: Received  10 messages
+[2025-10-30 23:29:21,702] [INFO] [src.simulation:147] -   Device  45: Received  10 messages
+[2025-10-30 23:29:21,702] [INFO] [src.simulation:147] -   Device  46: Received  10 messages
+[2025-10-30 23:29:21,702] [INFO] [src.simulation:147] -   Device  47: Received  10 messages
+[2025-10-30 23:29:21,702] [INFO] [src.simulation:147] -   Device  48: Received  10 messages
+[2025-10-30 23:29:21,702] [INFO] [src.simulation:147] -   Device  49: Received  10 messages
+[2025-10-30 23:29:21,702] [INFO] [src.simulation:147] -   Device  50: Received  10 messages
+[2025-10-30 23:29:21,702] [INFO] [src.simulation:147] -   Device  51: Received  10 messages
+[2025-10-30 23:29:21,702] [INFO] [src.simulation:147] -   Device  52: Received  10 messages
+[2025-10-30 23:29:21,702] [INFO] [src.simulation:147] -   Device  53: Received  10 messages
+[2025-10-30 23:29:21,702] [INFO] [src.simulation:147] -   Device  54: Received  10 messages
+[2025-10-30 23:29:21,702] [INFO] [src.simulation:147] -   Device  55: Received  10 messages
+[2025-10-30 23:29:21,702] [INFO] [src.simulation:147] -   Device  56: Received  10 messages
+[2025-10-30 23:29:21,702] [INFO] [src.simulation:147] -   Device  57: Received  10 messages
+[2025-10-30 23:29:21,702] [INFO] [src.simulation:147] -   Device  58: Received  10 messages
+[2025-10-30 23:29:21,702] [INFO] [src.simulation:147] -   Device  59: Received  10 messages
+[2025-10-30 23:29:21,702] [INFO] [src.simulation:147] -   Device  60: Received  10 messages
+[2025-10-30 23:29:21,702] [INFO] [src.simulation:147] -   Device  61: Received  10 messages
+[2025-10-30 23:29:21,702] [INFO] [src.simulation:147] -   Device  62: Received  10 messages
+[2025-10-30 23:29:21,702] [INFO] [src.simulation:147] -   Device  63: Received  10 messages
+[2025-10-30 23:29:21,702] [INFO] [src.simulation:147] -   Device  64: Received  10 messages
+[2025-10-30 23:29:21,702] [INFO] [src.simulation:147] -   Device  65: Received  10 messages
+[2025-10-30 23:29:21,702] [INFO] [src.simulation:147] -   Device  66: Received  10 messages
+[2025-10-30 23:29:21,702] [INFO] [src.simulation:147] -   Device  67: Received  10 messages
+[2025-10-30 23:29:21,702] [INFO] [src.simulation:147] -   Device  68: Received  10 messages
+[2025-10-30 23:29:21,702] [INFO] [src.simulation:147] -   Device  69: Received  10 messages
+[2025-10-30 23:29:21,702] [INFO] [src.simulation:147] -   Device  70: Received  10 messages
+[2025-10-30 23:29:21,702] [INFO] [src.simulation:147] -   Device  71: Received  10 messages
+[2025-10-30 23:29:21,702] [INFO] [src.simulation:147] -   Device  72: Received  10 messages
+[2025-10-30 23:29:21,702] [INFO] [src.simulation:147] -   Device  73: Received  10 messages
+[2025-10-30 23:29:21,702] [INFO] [src.simulation:147] -   Device  74: Received  10 messages
+[2025-10-30 23:29:21,702] [INFO] [src.simulation:147] -   Device  75: Received  10 messages
+[2025-10-30 23:29:21,702] [INFO] [src.simulation:147] -   Device  76: Received  10 messages
+[2025-10-30 23:29:21,702] [INFO] [src.simulation:147] -   Device  77: Received  10 messages
+[2025-10-30 23:29:21,702] [INFO] [src.simulation:147] -   Device  78: Received  10 messages
+[2025-10-30 23:29:21,702] [INFO] [src.simulation:147] -   Device  79: Received  10 messages
+[2025-10-30 23:29:21,702] [INFO] [src.simulation:147] -   Device  80: Received  10 messages
+[2025-10-30 23:29:21,702] [INFO] [src.simulation:147] -   Device  81: Received  10 messages
+[2025-10-30 23:29:21,702] [INFO] [src.simulation:147] -   Device  82: Received  10 messages
+[2025-10-30 23:29:21,702] [INFO] [src.simulation:147] -   Device  83: Received  10 messages
+[2025-10-30 23:29:21,702] [INFO] [src.simulation:147] -   Device  84: Received  10 messages
+[2025-10-30 23:29:21,702] [INFO] [src.simulation:147] -   Device  85: Received  10 messages
+[2025-10-30 23:29:21,702] [INFO] [src.simulation:147] -   Device  86: Received  10 messages
+[2025-10-30 23:29:21,702] [INFO] [src.simulation:147] -   Device  87: Received  10 messages
+[2025-10-30 23:29:21,702] [INFO] [src.simulation:147] -   Device  88: Received  10 messages
+[2025-10-30 23:29:21,702] [INFO] [src.simulation:147] -   Device  89: Received  10 messages
+[2025-10-30 23:29:21,702] [INFO] [src.simulation:147] -   Device  90: Received  10 messages
+[2025-10-30 23:29:21,703] [INFO] [src.simulation:147] -   Device  91: Received  10 messages
+[2025-10-30 23:29:21,703] [INFO] [src.simulation:147] -   Device  92: Received  10 messages
+[2025-10-30 23:29:21,703] [INFO] [src.simulation:147] -   Device  93: Received  10 messages
+[2025-10-30 23:29:21,703] [INFO] [src.simulation:147] -   Device  94: Received  10 messages
+[2025-10-30 23:29:21,703] [INFO] [src.simulation:147] -   Device  95: Received  10 messages
+[2025-10-30 23:29:21,703] [INFO] [src.simulation:147] -   Device  96: Received  10 messages
+[2025-10-30 23:29:21,703] [INFO] [src.simulation:147] -   Device  97: Received  10 messages
+[2025-10-30 23:29:21,703] [INFO] [src.simulation:147] -   Device  98: Received  10 messages
+[2025-10-30 23:29:21,703] [INFO] [src.simulation:147] -   Device  99: Received  10 messages
+[2025-10-30 23:29:21,703] [INFO] [src.simulation:147] -   Device 100: Received  10 messages
+[2025-10-30 23:29:21,703] [INFO] [src.simulation:149] - 
+Simulation complete!

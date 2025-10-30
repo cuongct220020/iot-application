@@ -1,0 +1,500 @@
+[2025-10-30 23:28:15,081] [INFO] [src.publisher_1:85] - Device 1 (street_123/pressure): Connected successfully
+[2025-10-30 23:28:15,081] [INFO] [src.publisher_1:192] - Device 1 (street_123/pressure): Starting to publish 10 messages.
+[2025-10-30 23:28:15,137] [INFO] [src.publisher_2:85] - Device 2 (city_center/air_quality): Connected successfully
+[2025-10-30 23:28:15,137] [INFO] [src.publisher_2:192] - Device 2 (city_center/air_quality): Starting to publish 10 messages.
+[2025-10-30 23:28:15,190] [INFO] [src.publisher_3:85] - Device 3 (city_center/pressure): Connected successfully
+[2025-10-30 23:28:15,190] [INFO] [src.publisher_3:192] - Device 3 (city_center/pressure): Starting to publish 10 messages.
+[2025-10-30 23:28:15,245] [INFO] [src.publisher_4:85] - Device 4 (city_center/temperature): Connected successfully
+[2025-10-30 23:28:15,245] [INFO] [src.publisher_4:192] - Device 4 (city_center/temperature): Starting to publish 10 messages.
+[2025-10-30 23:28:15,298] [INFO] [src.publisher_5:85] - Device 5 (city_center/temperature): Connected successfully
+[2025-10-30 23:28:15,298] [INFO] [src.publisher_5:192] - Device 5 (city_center/temperature): Starting to publish 10 messages.
+[2025-10-30 23:28:15,351] [INFO] [src.publisher_6:85] - Device 6 (park_north/air_quality): Connected successfully
+[2025-10-30 23:28:15,351] [INFO] [src.publisher_6:192] - Device 6 (park_north/air_quality): Starting to publish 10 messages.
+[2025-10-30 23:28:15,405] [INFO] [src.publisher_7:85] - Device 7 (street_123/temperature): Connected successfully
+[2025-10-30 23:28:15,405] [INFO] [src.publisher_7:192] - Device 7 (street_123/temperature): Starting to publish 10 messages.
+[2025-10-30 23:28:15,457] [INFO] [src.publisher_8:85] - Device 8 (city_center/pressure): Connected successfully
+[2025-10-30 23:28:15,457] [INFO] [src.publisher_8:192] - Device 8 (city_center/pressure): Starting to publish 10 messages.
+[2025-10-30 23:28:15,510] [INFO] [src.publisher_9:85] - Device 9 (industrial_zone/pressure): Connected successfully
+[2025-10-30 23:28:15,510] [INFO] [src.publisher_9:192] - Device 9 (industrial_zone/pressure): Starting to publish 10 messages.
+[2025-10-30 23:28:15,563] [INFO] [src.publisher_10:85] - Device 10 (industrial_zone/air_quality): Connected successfully
+[2025-10-30 23:28:15,563] [INFO] [src.publisher_10:192] - Device 10 (industrial_zone/air_quality): Starting to publish 10 messages.
+[2025-10-30 23:28:15,616] [INFO] [src.publisher_11:85] - Device 11 (park_north/air_quality): Connected successfully
+[2025-10-30 23:28:15,616] [INFO] [src.publisher_11:192] - Device 11 (park_north/air_quality): Starting to publish 10 messages.
+[2025-10-30 23:28:15,671] [INFO] [src.publisher_12:85] - Device 12 (park_north/temperature): Connected successfully
+[2025-10-30 23:28:15,671] [INFO] [src.publisher_12:192] - Device 12 (park_north/temperature): Starting to publish 10 messages.
+[2025-10-30 23:28:15,724] [INFO] [src.publisher_13:85] - Device 13 (park_north/humidity): Connected successfully
+[2025-10-30 23:28:15,724] [INFO] [src.publisher_13:192] - Device 13 (park_north/humidity): Starting to publish 10 messages.
+[2025-10-30 23:28:15,776] [INFO] [src.publisher_14:85] - Device 14 (park_north/pressure): Connected successfully
+[2025-10-30 23:28:15,776] [INFO] [src.publisher_14:192] - Device 14 (park_north/pressure): Starting to publish 10 messages.
+[2025-10-30 23:28:15,830] [INFO] [src.publisher_15:85] - Device 15 (street_123/air_quality): Connected successfully
+[2025-10-30 23:28:15,830] [INFO] [src.publisher_15:192] - Device 15 (street_123/air_quality): Starting to publish 10 messages.
+[2025-10-30 23:28:15,886] [INFO] [src.publisher_16:85] - Device 16 (street_123/pressure): Connected successfully
+[2025-10-30 23:28:15,886] [INFO] [src.publisher_16:192] - Device 16 (street_123/pressure): Starting to publish 10 messages.
+[2025-10-30 23:28:15,941] [INFO] [src.publisher_17:85] - Device 17 (city_center/pressure): Connected successfully
+[2025-10-30 23:28:15,941] [INFO] [src.publisher_17:192] - Device 17 (city_center/pressure): Starting to publish 10 messages.
+[2025-10-30 23:28:15,994] [INFO] [src.publisher_18:85] - Device 18 (park_north/temperature): Connected successfully
+[2025-10-30 23:28:15,994] [INFO] [src.publisher_18:192] - Device 18 (park_north/temperature): Starting to publish 10 messages.
+[2025-10-30 23:28:16,049] [INFO] [src.publisher_19:85] - Device 19 (park_north/temperature): Connected successfully
+[2025-10-30 23:28:16,049] [INFO] [src.publisher_19:192] - Device 19 (park_north/temperature): Starting to publish 10 messages.
+[2025-10-30 23:28:16,103] [INFO] [src.publisher_20:85] - Device 20 (park_north/temperature): Connected successfully
+[2025-10-30 23:28:16,103] [INFO] [src.publisher_20:192] - Device 20 (park_north/temperature): Starting to publish 10 messages.
+[2025-10-30 23:28:16,156] [INFO] [src.publisher_21:85] - Device 21 (park_north/temperature): Connected successfully
+[2025-10-30 23:28:16,157] [INFO] [src.publisher_21:192] - Device 21 (park_north/temperature): Starting to publish 10 messages.
+[2025-10-30 23:28:16,212] [INFO] [src.publisher_22:85] - Device 22 (industrial_zone/pressure): Connected successfully
+[2025-10-30 23:28:16,212] [INFO] [src.publisher_22:192] - Device 22 (industrial_zone/pressure): Starting to publish 10 messages.
+[2025-10-30 23:28:16,266] [INFO] [src.publisher_23:85] - Device 23 (street_123/temperature): Connected successfully
+[2025-10-30 23:28:16,266] [INFO] [src.publisher_23:192] - Device 23 (street_123/temperature): Starting to publish 10 messages.
+[2025-10-30 23:28:16,320] [INFO] [src.publisher_24:85] - Device 24 (park_north/humidity): Connected successfully
+[2025-10-30 23:28:16,321] [INFO] [src.publisher_24:192] - Device 24 (park_north/humidity): Starting to publish 10 messages.
+[2025-10-30 23:28:16,377] [INFO] [src.publisher_25:85] - Device 25 (street_123/humidity): Connected successfully
+[2025-10-30 23:28:16,377] [INFO] [src.publisher_25:192] - Device 25 (street_123/humidity): Starting to publish 10 messages.
+[2025-10-30 23:28:16,433] [INFO] [src.publisher_26:85] - Device 26 (industrial_zone/humidity): Connected successfully
+[2025-10-30 23:28:16,433] [INFO] [src.publisher_26:192] - Device 26 (industrial_zone/humidity): Starting to publish 10 messages.
+[2025-10-30 23:28:16,487] [INFO] [src.publisher_27:85] - Device 27 (industrial_zone/humidity): Connected successfully
+[2025-10-30 23:28:16,487] [INFO] [src.publisher_27:192] - Device 27 (industrial_zone/humidity): Starting to publish 10 messages.
+[2025-10-30 23:28:16,541] [INFO] [src.publisher_28:85] - Device 28 (city_center/humidity): Connected successfully
+[2025-10-30 23:28:16,541] [INFO] [src.publisher_28:192] - Device 28 (city_center/humidity): Starting to publish 10 messages.
+[2025-10-30 23:28:16,594] [INFO] [src.publisher_29:85] - Device 29 (city_center/air_quality): Connected successfully
+[2025-10-30 23:28:16,594] [INFO] [src.publisher_29:192] - Device 29 (city_center/air_quality): Starting to publish 10 messages.
+[2025-10-30 23:28:16,648] [INFO] [src.publisher_30:85] - Device 30 (park_north/pressure): Connected successfully
+[2025-10-30 23:28:16,648] [INFO] [src.publisher_30:192] - Device 30 (park_north/pressure): Starting to publish 10 messages.
+[2025-10-30 23:28:16,705] [INFO] [src.publisher_31:85] - Device 31 (park_north/temperature): Connected successfully
+[2025-10-30 23:28:16,705] [INFO] [src.publisher_31:192] - Device 31 (park_north/temperature): Starting to publish 10 messages.
+[2025-10-30 23:28:16,758] [INFO] [src.publisher_32:85] - Device 32 (park_north/pressure): Connected successfully
+[2025-10-30 23:28:16,758] [INFO] [src.publisher_32:192] - Device 32 (park_north/pressure): Starting to publish 10 messages.
+[2025-10-30 23:28:16,812] [INFO] [src.publisher_33:85] - Device 33 (city_center/pressure): Connected successfully
+[2025-10-30 23:28:16,813] [INFO] [src.publisher_33:192] - Device 33 (city_center/pressure): Starting to publish 10 messages.
+[2025-10-30 23:28:16,864] [INFO] [src.publisher_34:85] - Device 34 (park_north/temperature): Connected successfully
+[2025-10-30 23:28:16,865] [INFO] [src.publisher_34:192] - Device 34 (park_north/temperature): Starting to publish 10 messages.
+[2025-10-30 23:28:16,920] [INFO] [src.publisher_35:85] - Device 35 (city_center/humidity): Connected successfully
+[2025-10-30 23:28:16,921] [INFO] [src.publisher_35:192] - Device 35 (city_center/humidity): Starting to publish 10 messages.
+[2025-10-30 23:28:16,976] [INFO] [src.publisher_36:85] - Device 36 (street_123/humidity): Connected successfully
+[2025-10-30 23:28:16,976] [INFO] [src.publisher_36:192] - Device 36 (street_123/humidity): Starting to publish 10 messages.
+[2025-10-30 23:28:17,031] [INFO] [src.publisher_37:85] - Device 37 (city_center/pressure): Connected successfully
+[2025-10-30 23:28:17,031] [INFO] [src.publisher_37:192] - Device 37 (city_center/pressure): Starting to publish 10 messages.
+[2025-10-30 23:28:17,084] [INFO] [src.publisher_38:85] - Device 38 (industrial_zone/pressure): Connected successfully
+[2025-10-30 23:28:17,084] [INFO] [src.publisher_38:192] - Device 38 (industrial_zone/pressure): Starting to publish 10 messages.
+[2025-10-30 23:28:17,141] [INFO] [src.publisher_39:85] - Device 39 (park_north/temperature): Connected successfully
+[2025-10-30 23:28:17,141] [INFO] [src.publisher_39:192] - Device 39 (park_north/temperature): Starting to publish 10 messages.
+[2025-10-30 23:28:17,195] [INFO] [src.publisher_40:85] - Device 40 (park_north/temperature): Connected successfully
+[2025-10-30 23:28:17,195] [INFO] [src.publisher_40:192] - Device 40 (park_north/temperature): Starting to publish 10 messages.
+[2025-10-30 23:28:17,249] [INFO] [src.publisher_41:85] - Device 41 (street_123/pressure): Connected successfully
+[2025-10-30 23:28:17,249] [INFO] [src.publisher_41:192] - Device 41 (street_123/pressure): Starting to publish 10 messages.
+[2025-10-30 23:28:17,305] [INFO] [src.publisher_42:85] - Device 42 (industrial_zone/air_quality): Connected successfully
+[2025-10-30 23:28:17,305] [INFO] [src.publisher_42:192] - Device 42 (industrial_zone/air_quality): Starting to publish 10 messages.
+[2025-10-30 23:28:17,355] [INFO] [src.publisher_43:85] - Device 43 (industrial_zone/air_quality): Connected successfully
+[2025-10-30 23:28:17,355] [INFO] [src.publisher_43:192] - Device 43 (industrial_zone/air_quality): Starting to publish 10 messages.
+[2025-10-30 23:28:17,410] [INFO] [src.publisher_44:85] - Device 44 (street_123/air_quality): Connected successfully
+[2025-10-30 23:28:17,411] [INFO] [src.publisher_44:192] - Device 44 (street_123/air_quality): Starting to publish 10 messages.
+[2025-10-30 23:28:17,461] [INFO] [src.publisher_45:85] - Device 45 (industrial_zone/air_quality): Connected successfully
+[2025-10-30 23:28:17,461] [INFO] [src.publisher_45:192] - Device 45 (industrial_zone/air_quality): Starting to publish 10 messages.
+[2025-10-30 23:28:17,516] [INFO] [src.publisher_46:85] - Device 46 (park_north/air_quality): Connected successfully
+[2025-10-30 23:28:17,516] [INFO] [src.publisher_46:192] - Device 46 (park_north/air_quality): Starting to publish 10 messages.
+[2025-10-30 23:28:17,570] [INFO] [src.publisher_47:85] - Device 47 (park_north/temperature): Connected successfully
+[2025-10-30 23:28:17,570] [INFO] [src.publisher_47:192] - Device 47 (park_north/temperature): Starting to publish 10 messages.
+[2025-10-30 23:28:17,624] [INFO] [src.publisher_48:85] - Device 48 (city_center/temperature): Connected successfully
+[2025-10-30 23:28:17,624] [INFO] [src.publisher_48:192] - Device 48 (city_center/temperature): Starting to publish 10 messages.
+[2025-10-30 23:28:17,675] [INFO] [src.publisher_49:85] - Device 49 (street_123/temperature): Connected successfully
+[2025-10-30 23:28:17,675] [INFO] [src.publisher_49:192] - Device 49 (street_123/temperature): Starting to publish 10 messages.
+[2025-10-30 23:28:17,733] [INFO] [src.publisher_50:85] - Device 50 (park_north/pressure): Connected successfully
+[2025-10-30 23:28:17,733] [INFO] [src.publisher_50:192] - Device 50 (park_north/pressure): Starting to publish 10 messages.
+[2025-10-30 23:28:17,846] [INFO] [src.publisher_51:85] - Device 51 (industrial_zone/pressure): Connected successfully
+[2025-10-30 23:28:17,847] [INFO] [src.publisher_51:192] - Device 51 (industrial_zone/pressure): Starting to publish 10 messages.
+[2025-10-30 23:28:17,878] [INFO] [src.publisher_52:85] - Device 52 (city_center/pressure): Connected successfully
+[2025-10-30 23:28:17,878] [INFO] [src.publisher_52:192] - Device 52 (city_center/pressure): Starting to publish 10 messages.
+[2025-10-30 23:28:17,922] [INFO] [src.publisher_53:85] - Device 53 (park_north/pressure): Connected successfully
+[2025-10-30 23:28:17,922] [INFO] [src.publisher_53:192] - Device 53 (park_north/pressure): Starting to publish 10 messages.
+[2025-10-30 23:28:17,961] [INFO] [src.publisher_54:85] - Device 54 (industrial_zone/air_quality): Connected successfully
+[2025-10-30 23:28:17,961] [INFO] [src.publisher_54:192] - Device 54 (industrial_zone/air_quality): Starting to publish 10 messages.
+[2025-10-30 23:28:18,007] [INFO] [src.publisher_55:85] - Device 55 (city_center/pressure): Connected successfully
+[2025-10-30 23:28:18,008] [INFO] [src.publisher_55:192] - Device 55 (city_center/pressure): Starting to publish 10 messages.
+[2025-10-30 23:28:18,063] [INFO] [src.publisher_56:85] - Device 56 (city_center/air_quality): Connected successfully
+[2025-10-30 23:28:18,063] [INFO] [src.publisher_56:192] - Device 56 (city_center/air_quality): Starting to publish 10 messages.
+[2025-10-30 23:28:18,112] [INFO] [src.publisher_57:85] - Device 57 (park_north/pressure): Connected successfully
+[2025-10-30 23:28:18,112] [INFO] [src.publisher_57:192] - Device 57 (park_north/pressure): Starting to publish 10 messages.
+[2025-10-30 23:28:18,165] [INFO] [src.publisher_58:85] - Device 58 (city_center/humidity): Connected successfully
+[2025-10-30 23:28:18,165] [INFO] [src.publisher_58:192] - Device 58 (city_center/humidity): Starting to publish 10 messages.
+[2025-10-30 23:28:18,219] [INFO] [src.publisher_59:85] - Device 59 (industrial_zone/pressure): Connected successfully
+[2025-10-30 23:28:18,219] [INFO] [src.publisher_59:192] - Device 59 (industrial_zone/pressure): Starting to publish 10 messages.
+[2025-10-30 23:28:18,273] [INFO] [src.publisher_60:85] - Device 60 (industrial_zone/temperature): Connected successfully
+[2025-10-30 23:28:18,273] [INFO] [src.publisher_60:192] - Device 60 (industrial_zone/temperature): Starting to publish 10 messages.
+[2025-10-30 23:28:18,326] [INFO] [src.publisher_61:85] - Device 61 (city_center/humidity): Connected successfully
+[2025-10-30 23:28:18,326] [INFO] [src.publisher_61:192] - Device 61 (city_center/humidity): Starting to publish 10 messages.
+[2025-10-30 23:28:18,382] [INFO] [src.publisher_62:85] - Device 62 (street_123/pressure): Connected successfully
+[2025-10-30 23:28:18,382] [INFO] [src.publisher_62:192] - Device 62 (street_123/pressure): Starting to publish 10 messages.
+[2025-10-30 23:28:18,432] [INFO] [src.publisher_63:85] - Device 63 (street_123/temperature): Connected successfully
+[2025-10-30 23:28:18,433] [INFO] [src.publisher_63:192] - Device 63 (street_123/temperature): Starting to publish 10 messages.
+[2025-10-30 23:28:18,488] [INFO] [src.publisher_64:85] - Device 64 (street_123/temperature): Connected successfully
+[2025-10-30 23:28:18,488] [INFO] [src.publisher_64:192] - Device 64 (street_123/temperature): Starting to publish 10 messages.
+[2025-10-30 23:28:18,544] [INFO] [src.publisher_65:85] - Device 65 (city_center/temperature): Connected successfully
+[2025-10-30 23:28:18,544] [INFO] [src.publisher_65:192] - Device 65 (city_center/temperature): Starting to publish 10 messages.
+[2025-10-30 23:28:18,598] [INFO] [src.publisher_66:85] - Device 66 (street_123/humidity): Connected successfully
+[2025-10-30 23:28:18,598] [INFO] [src.publisher_66:192] - Device 66 (street_123/humidity): Starting to publish 10 messages.
+[2025-10-30 23:28:18,654] [INFO] [src.publisher_67:85] - Device 67 (industrial_zone/humidity): Connected successfully
+[2025-10-30 23:28:18,654] [INFO] [src.publisher_67:192] - Device 67 (industrial_zone/humidity): Starting to publish 10 messages.
+[2025-10-30 23:28:18,708] [INFO] [src.publisher_68:85] - Device 68 (city_center/pressure): Connected successfully
+[2025-10-30 23:28:18,708] [INFO] [src.publisher_68:192] - Device 68 (city_center/pressure): Starting to publish 10 messages.
+[2025-10-30 23:28:18,763] [INFO] [src.publisher_69:85] - Device 69 (street_123/humidity): Connected successfully
+[2025-10-30 23:28:18,764] [INFO] [src.publisher_69:192] - Device 69 (street_123/humidity): Starting to publish 10 messages.
+[2025-10-30 23:28:18,815] [INFO] [src.publisher_70:85] - Device 70 (industrial_zone/air_quality): Connected successfully
+[2025-10-30 23:28:18,815] [INFO] [src.publisher_70:192] - Device 70 (industrial_zone/air_quality): Starting to publish 10 messages.
+[2025-10-30 23:28:18,871] [INFO] [src.publisher_71:85] - Device 71 (park_north/humidity): Connected successfully
+[2025-10-30 23:28:18,871] [INFO] [src.publisher_71:192] - Device 71 (park_north/humidity): Starting to publish 10 messages.
+[2025-10-30 23:28:18,925] [INFO] [src.publisher_72:85] - Device 72 (industrial_zone/humidity): Connected successfully
+[2025-10-30 23:28:18,926] [INFO] [src.publisher_72:192] - Device 72 (industrial_zone/humidity): Starting to publish 10 messages.
+[2025-10-30 23:28:18,982] [INFO] [src.publisher_73:85] - Device 73 (industrial_zone/temperature): Connected successfully
+[2025-10-30 23:28:18,982] [INFO] [src.publisher_73:192] - Device 73 (industrial_zone/temperature): Starting to publish 10 messages.
+[2025-10-30 23:28:19,037] [INFO] [src.publisher_74:85] - Device 74 (city_center/humidity): Connected successfully
+[2025-10-30 23:28:19,037] [INFO] [src.publisher_74:192] - Device 74 (city_center/humidity): Starting to publish 10 messages.
+[2025-10-30 23:28:19,089] [INFO] [src.publisher_75:85] - Device 75 (street_123/temperature): Connected successfully
+[2025-10-30 23:28:19,089] [INFO] [src.publisher_75:192] - Device 75 (street_123/temperature): Starting to publish 10 messages.
+[2025-10-30 23:28:19,145] [INFO] [src.publisher_76:85] - Device 76 (city_center/pressure): Connected successfully
+[2025-10-30 23:28:19,145] [INFO] [src.publisher_76:192] - Device 76 (city_center/pressure): Starting to publish 10 messages.
+[2025-10-30 23:28:19,199] [INFO] [src.publisher_77:85] - Device 77 (city_center/pressure): Connected successfully
+[2025-10-30 23:28:19,199] [INFO] [src.publisher_77:192] - Device 77 (city_center/pressure): Starting to publish 10 messages.
+[2025-10-30 23:28:19,249] [INFO] [src.publisher_78:85] - Device 78 (city_center/air_quality): Connected successfully
+[2025-10-30 23:28:19,249] [INFO] [src.publisher_78:192] - Device 78 (city_center/air_quality): Starting to publish 10 messages.
+[2025-10-30 23:28:19,303] [INFO] [src.publisher_79:85] - Device 79 (city_center/humidity): Connected successfully
+[2025-10-30 23:28:19,303] [INFO] [src.publisher_79:192] - Device 79 (city_center/humidity): Starting to publish 10 messages.
+[2025-10-30 23:28:19,355] [INFO] [src.publisher_80:85] - Device 80 (street_123/temperature): Connected successfully
+[2025-10-30 23:28:19,355] [INFO] [src.publisher_80:192] - Device 80 (street_123/temperature): Starting to publish 10 messages.
+[2025-10-30 23:28:19,411] [INFO] [src.publisher_81:85] - Device 81 (street_123/temperature): Connected successfully
+[2025-10-30 23:28:19,411] [INFO] [src.publisher_81:192] - Device 81 (street_123/temperature): Starting to publish 10 messages.
+[2025-10-30 23:28:19,463] [INFO] [src.publisher_82:85] - Device 82 (industrial_zone/humidity): Connected successfully
+[2025-10-30 23:28:19,463] [INFO] [src.publisher_82:192] - Device 82 (industrial_zone/humidity): Starting to publish 10 messages.
+[2025-10-30 23:28:19,518] [INFO] [src.publisher_83:85] - Device 83 (park_north/pressure): Connected successfully
+[2025-10-30 23:28:19,518] [INFO] [src.publisher_83:192] - Device 83 (park_north/pressure): Starting to publish 10 messages.
+[2025-10-30 23:28:19,574] [INFO] [src.publisher_84:85] - Device 84 (park_north/pressure): Connected successfully
+[2025-10-30 23:28:19,574] [INFO] [src.publisher_84:192] - Device 84 (park_north/pressure): Starting to publish 10 messages.
+[2025-10-30 23:28:19,627] [INFO] [src.publisher_85:85] - Device 85 (park_north/pressure): Connected successfully
+[2025-10-30 23:28:19,628] [INFO] [src.publisher_85:192] - Device 85 (park_north/pressure): Starting to publish 10 messages.
+[2025-10-30 23:28:19,680] [INFO] [src.publisher_86:85] - Device 86 (street_123/humidity): Connected successfully
+[2025-10-30 23:28:19,680] [INFO] [src.publisher_86:192] - Device 86 (street_123/humidity): Starting to publish 10 messages.
+[2025-10-30 23:28:19,734] [INFO] [src.publisher_87:85] - Device 87 (industrial_zone/humidity): Connected successfully
+[2025-10-30 23:28:19,734] [INFO] [src.publisher_87:192] - Device 87 (industrial_zone/humidity): Starting to publish 10 messages.
+[2025-10-30 23:28:19,788] [INFO] [src.publisher_88:85] - Device 88 (street_123/air_quality): Connected successfully
+[2025-10-30 23:28:19,788] [INFO] [src.publisher_88:192] - Device 88 (street_123/air_quality): Starting to publish 10 messages.
+[2025-10-30 23:28:19,840] [INFO] [src.publisher_89:85] - Device 89 (street_123/temperature): Connected successfully
+[2025-10-30 23:28:19,840] [INFO] [src.publisher_89:192] - Device 89 (street_123/temperature): Starting to publish 10 messages.
+[2025-10-30 23:28:19,895] [INFO] [src.publisher_90:85] - Device 90 (park_north/air_quality): Connected successfully
+[2025-10-30 23:28:19,895] [INFO] [src.publisher_90:192] - Device 90 (park_north/air_quality): Starting to publish 10 messages.
+[2025-10-30 23:28:19,949] [INFO] [src.publisher_91:85] - Device 91 (industrial_zone/pressure): Connected successfully
+[2025-10-30 23:28:19,949] [INFO] [src.publisher_91:192] - Device 91 (industrial_zone/pressure): Starting to publish 10 messages.
+[2025-10-30 23:28:20,003] [INFO] [src.publisher_92:85] - Device 92 (city_center/humidity): Connected successfully
+[2025-10-30 23:28:20,003] [INFO] [src.publisher_92:192] - Device 92 (city_center/humidity): Starting to publish 10 messages.
+[2025-10-30 23:28:20,056] [INFO] [src.publisher_93:85] - Device 93 (street_123/humidity): Connected successfully
+[2025-10-30 23:28:20,056] [INFO] [src.publisher_93:192] - Device 93 (street_123/humidity): Starting to publish 10 messages.
+[2025-10-30 23:28:20,107] [INFO] [src.publisher_94:85] - Device 94 (city_center/humidity): Connected successfully
+[2025-10-30 23:28:20,107] [INFO] [src.publisher_94:192] - Device 94 (city_center/humidity): Starting to publish 10 messages.
+[2025-10-30 23:28:20,162] [INFO] [src.publisher_95:85] - Device 95 (park_north/air_quality): Connected successfully
+[2025-10-30 23:28:20,162] [INFO] [src.publisher_95:192] - Device 95 (park_north/air_quality): Starting to publish 10 messages.
+[2025-10-30 23:28:20,214] [INFO] [src.publisher_96:85] - Device 96 (park_north/temperature): Connected successfully
+[2025-10-30 23:28:20,214] [INFO] [src.publisher_96:192] - Device 96 (park_north/temperature): Starting to publish 10 messages.
+[2025-10-30 23:28:20,270] [INFO] [src.publisher_97:85] - Device 97 (industrial_zone/air_quality): Connected successfully
+[2025-10-30 23:28:20,270] [INFO] [src.publisher_97:192] - Device 97 (industrial_zone/air_quality): Starting to publish 10 messages.
+[2025-10-30 23:28:20,324] [INFO] [src.publisher_98:85] - Device 98 (park_north/temperature): Connected successfully
+[2025-10-30 23:28:20,324] [INFO] [src.publisher_98:192] - Device 98 (park_north/temperature): Starting to publish 10 messages.
+[2025-10-30 23:28:20,375] [INFO] [src.publisher_99:85] - Device 99 (city_center/humidity): Connected successfully
+[2025-10-30 23:28:20,375] [INFO] [src.publisher_99:192] - Device 99 (city_center/humidity): Starting to publish 10 messages.
+[2025-10-30 23:28:20,429] [INFO] [src.publisher_100:85] - Device 100 (city_center/humidity): Connected successfully
+[2025-10-30 23:28:20,429] [INFO] [src.publisher_100:192] - Device 100 (city_center/humidity): Starting to publish 10 messages.
+[2025-10-30 23:29:03,406] [INFO] [src.publisher_2:211] - Device 2 (city_center/air_quality): Finished sending messages.
+[2025-10-30 23:29:03,406] [INFO] [src.publisher_2:223] - Device 2: Shutting down.
+[2025-10-30 23:29:03,406] [INFO] [src.publisher_2:106] - Device 2 (city_center/air_quality): Disconnected cleanly.
+[2025-10-30 23:29:04,570] [INFO] [src.publisher_18:211] - Device 18 (park_north/temperature): Finished sending messages.
+[2025-10-30 23:29:04,570] [INFO] [src.publisher_18:223] - Device 18: Shutting down.
+[2025-10-30 23:29:04,570] [INFO] [src.publisher_18:106] - Device 18 (park_north/temperature): Disconnected cleanly.
+[2025-10-30 23:29:05,054] [INFO] [src.publisher_5:211] - Device 5 (city_center/temperature): Finished sending messages.
+[2025-10-30 23:29:05,054] [INFO] [src.publisher_5:223] - Device 5: Shutting down.
+[2025-10-30 23:29:05,054] [INFO] [src.publisher_5:106] - Device 5 (city_center/temperature): Disconnected cleanly.
+[2025-10-30 23:29:05,085] [INFO] [src.publisher_6:211] - Device 6 (park_north/air_quality): Finished sending messages.
+[2025-10-30 23:29:05,085] [INFO] [src.publisher_6:223] - Device 6: Shutting down.
+[2025-10-30 23:29:05,085] [INFO] [src.publisher_6:106] - Device 6 (park_north/air_quality): Disconnected cleanly.
+[2025-10-30 23:29:05,302] [INFO] [src.publisher_3:211] - Device 3 (city_center/pressure): Finished sending messages.
+[2025-10-30 23:29:05,302] [INFO] [src.publisher_3:223] - Device 3: Shutting down.
+[2025-10-30 23:29:05,302] [INFO] [src.publisher_3:106] - Device 3 (city_center/pressure): Disconnected cleanly.
+[2025-10-30 23:29:05,340] [INFO] [src.publisher_31:211] - Device 31 (park_north/temperature): Finished sending messages.
+[2025-10-30 23:29:05,340] [INFO] [src.publisher_31:223] - Device 31: Shutting down.
+[2025-10-30 23:29:05,340] [INFO] [src.publisher_31:106] - Device 31 (park_north/temperature): Disconnected cleanly.
+[2025-10-30 23:29:05,417] [INFO] [src.publisher_9:211] - Device 9 (industrial_zone/pressure): Finished sending messages.
+[2025-10-30 23:29:05,417] [INFO] [src.publisher_9:223] - Device 9: Shutting down.
+[2025-10-30 23:29:05,417] [INFO] [src.publisher_9:106] - Device 9 (industrial_zone/pressure): Disconnected cleanly.
+[2025-10-30 23:29:05,418] [INFO] [src.publisher_10:211] - Device 10 (industrial_zone/air_quality): Finished sending messages.
+[2025-10-30 23:29:05,418] [INFO] [src.publisher_10:223] - Device 10: Shutting down.
+[2025-10-30 23:29:05,418] [INFO] [src.publisher_10:106] - Device 10 (industrial_zone/air_quality): Disconnected cleanly.
+[2025-10-30 23:29:05,661] [INFO] [src.publisher_4:211] - Device 4 (city_center/temperature): Finished sending messages.
+[2025-10-30 23:29:05,661] [INFO] [src.publisher_4:223] - Device 4: Shutting down.
+[2025-10-30 23:29:05,661] [INFO] [src.publisher_4:106] - Device 4 (city_center/temperature): Disconnected cleanly.
+[2025-10-30 23:29:05,663] [INFO] [src.publisher_48:211] - Device 48 (city_center/temperature): Finished sending messages.
+[2025-10-30 23:29:05,663] [INFO] [src.publisher_48:223] - Device 48: Shutting down.
+[2025-10-30 23:29:05,663] [INFO] [src.publisher_48:106] - Device 48 (city_center/temperature): Disconnected cleanly.
+[2025-10-30 23:29:05,710] [INFO] [src.publisher_33:211] - Device 33 (city_center/pressure): Finished sending messages.
+[2025-10-30 23:29:05,710] [INFO] [src.publisher_33:223] - Device 33: Shutting down.
+[2025-10-30 23:29:05,710] [INFO] [src.publisher_33:106] - Device 33 (city_center/pressure): Disconnected cleanly.
+[2025-10-30 23:29:05,711] [INFO] [src.publisher_15:211] - Device 15 (street_123/air_quality): Finished sending messages.
+[2025-10-30 23:29:05,711] [INFO] [src.publisher_15:223] - Device 15: Shutting down.
+[2025-10-30 23:29:05,712] [INFO] [src.publisher_15:106] - Device 15 (street_123/air_quality): Disconnected cleanly.
+[2025-10-30 23:29:05,728] [INFO] [src.publisher_30:211] - Device 30 (park_north/pressure): Finished sending messages.
+[2025-10-30 23:29:05,728] [INFO] [src.publisher_30:223] - Device 30: Shutting down.
+[2025-10-30 23:29:05,728] [INFO] [src.publisher_30:106] - Device 30 (park_north/pressure): Disconnected cleanly.
+[2025-10-30 23:29:05,735] [INFO] [src.publisher_16:211] - Device 16 (street_123/pressure): Finished sending messages.
+[2025-10-30 23:29:05,735] [INFO] [src.publisher_16:223] - Device 16: Shutting down.
+[2025-10-30 23:29:05,735] [INFO] [src.publisher_16:106] - Device 16 (street_123/pressure): Disconnected cleanly.
+[2025-10-30 23:29:05,808] [INFO] [src.publisher_1:211] - Device 1 (street_123/pressure): Finished sending messages.
+[2025-10-30 23:29:05,808] [INFO] [src.publisher_1:223] - Device 1: Shutting down.
+[2025-10-30 23:29:05,808] [INFO] [src.publisher_1:106] - Device 1 (street_123/pressure): Disconnected cleanly.
+[2025-10-30 23:29:05,812] [INFO] [src.publisher_8:211] - Device 8 (city_center/pressure): Finished sending messages.
+[2025-10-30 23:29:05,812] [INFO] [src.publisher_8:223] - Device 8: Shutting down.
+[2025-10-30 23:29:05,812] [INFO] [src.publisher_8:106] - Device 8 (city_center/pressure): Disconnected cleanly.
+[2025-10-30 23:29:05,922] [INFO] [src.publisher_26:211] - Device 26 (industrial_zone/humidity): Finished sending messages.
+[2025-10-30 23:29:05,922] [INFO] [src.publisher_26:223] - Device 26: Shutting down.
+[2025-10-30 23:29:05,922] [INFO] [src.publisher_26:106] - Device 26 (industrial_zone/humidity): Disconnected cleanly.
+[2025-10-30 23:29:06,014] [INFO] [src.publisher_28:211] - Device 28 (city_center/humidity): Finished sending messages.
+[2025-10-30 23:29:06,014] [INFO] [src.publisher_28:223] - Device 28: Shutting down.
+[2025-10-30 23:29:06,014] [INFO] [src.publisher_28:106] - Device 28 (city_center/humidity): Disconnected cleanly.
+[2025-10-30 23:29:06,035] [INFO] [src.publisher_11:211] - Device 11 (park_north/air_quality): Finished sending messages.
+[2025-10-30 23:29:06,035] [INFO] [src.publisher_11:223] - Device 11: Shutting down.
+[2025-10-30 23:29:06,036] [INFO] [src.publisher_11:106] - Device 11 (park_north/air_quality): Disconnected cleanly.
+[2025-10-30 23:29:06,078] [INFO] [src.publisher_25:211] - Device 25 (street_123/humidity): Finished sending messages.
+[2025-10-30 23:29:06,078] [INFO] [src.publisher_25:223] - Device 25: Shutting down.
+[2025-10-30 23:29:06,078] [INFO] [src.publisher_25:106] - Device 25 (street_123/humidity): Disconnected cleanly.
+[2025-10-30 23:29:06,146] [INFO] [src.publisher_13:211] - Device 13 (park_north/humidity): Finished sending messages.
+[2025-10-30 23:29:06,146] [INFO] [src.publisher_13:223] - Device 13: Shutting down.
+[2025-10-30 23:29:06,146] [INFO] [src.publisher_13:106] - Device 13 (park_north/humidity): Disconnected cleanly.
+[2025-10-30 23:29:06,179] [INFO] [src.publisher_32:211] - Device 32 (park_north/pressure): Finished sending messages.
+[2025-10-30 23:29:06,180] [INFO] [src.publisher_32:223] - Device 32: Shutting down.
+[2025-10-30 23:29:06,180] [INFO] [src.publisher_32:106] - Device 32 (park_north/pressure): Disconnected cleanly.
+[2025-10-30 23:29:06,238] [INFO] [src.publisher_14:211] - Device 14 (park_north/pressure): Finished sending messages.
+[2025-10-30 23:29:06,239] [INFO] [src.publisher_14:223] - Device 14: Shutting down.
+[2025-10-30 23:29:06,239] [INFO] [src.publisher_14:106] - Device 14 (park_north/pressure): Disconnected cleanly.
+[2025-10-30 23:29:06,254] [INFO] [src.publisher_27:211] - Device 27 (industrial_zone/humidity): Finished sending messages.
+[2025-10-30 23:29:06,254] [INFO] [src.publisher_27:223] - Device 27: Shutting down.
+[2025-10-30 23:29:06,254] [INFO] [src.publisher_27:106] - Device 27 (industrial_zone/humidity): Disconnected cleanly.
+[2025-10-30 23:29:06,288] [INFO] [src.publisher_36:211] - Device 36 (street_123/humidity): Finished sending messages.
+[2025-10-30 23:29:06,288] [INFO] [src.publisher_36:223] - Device 36: Shutting down.
+[2025-10-30 23:29:06,288] [INFO] [src.publisher_36:106] - Device 36 (street_123/humidity): Disconnected cleanly.
+[2025-10-30 23:29:06,343] [INFO] [src.publisher_20:211] - Device 20 (park_north/temperature): Finished sending messages.
+[2025-10-30 23:29:06,343] [INFO] [src.publisher_20:223] - Device 20: Shutting down.
+[2025-10-30 23:29:06,344] [INFO] [src.publisher_20:106] - Device 20 (park_north/temperature): Disconnected cleanly.
+[2025-10-30 23:29:06,489] [INFO] [src.publisher_24:211] - Device 24 (park_north/humidity): Finished sending messages.
+[2025-10-30 23:29:06,489] [INFO] [src.publisher_24:223] - Device 24: Shutting down.
+[2025-10-30 23:29:06,489] [INFO] [src.publisher_24:106] - Device 24 (park_north/humidity): Disconnected cleanly.
+[2025-10-30 23:29:06,589] [INFO] [src.publisher_29:211] - Device 29 (city_center/air_quality): Finished sending messages.
+[2025-10-30 23:29:06,590] [INFO] [src.publisher_29:223] - Device 29: Shutting down.
+[2025-10-30 23:29:06,590] [INFO] [src.publisher_29:106] - Device 29 (city_center/air_quality): Disconnected cleanly.
+[2025-10-30 23:29:06,593] [INFO] [src.publisher_12:211] - Device 12 (park_north/temperature): Finished sending messages.
+[2025-10-30 23:29:06,593] [INFO] [src.publisher_12:223] - Device 12: Shutting down.
+[2025-10-30 23:29:06,593] [INFO] [src.publisher_12:106] - Device 12 (park_north/temperature): Disconnected cleanly.
+[2025-10-30 23:29:06,607] [INFO] [src.publisher_22:211] - Device 22 (industrial_zone/pressure): Finished sending messages.
+[2025-10-30 23:29:06,607] [INFO] [src.publisher_22:223] - Device 22: Shutting down.
+[2025-10-30 23:29:06,607] [INFO] [src.publisher_22:106] - Device 22 (industrial_zone/pressure): Disconnected cleanly.
+[2025-10-30 23:29:06,757] [INFO] [src.publisher_49:211] - Device 49 (street_123/temperature): Finished sending messages.
+[2025-10-30 23:29:06,757] [INFO] [src.publisher_49:223] - Device 49: Shutting down.
+[2025-10-30 23:29:06,757] [INFO] [src.publisher_49:106] - Device 49 (street_123/temperature): Disconnected cleanly.
+[2025-10-30 23:29:06,777] [INFO] [src.publisher_68:211] - Device 68 (city_center/pressure): Finished sending messages.
+[2025-10-30 23:29:06,777] [INFO] [src.publisher_68:223] - Device 68: Shutting down.
+[2025-10-30 23:29:06,777] [INFO] [src.publisher_68:106] - Device 68 (city_center/pressure): Disconnected cleanly.
+[2025-10-30 23:29:06,846] [INFO] [src.publisher_7:211] - Device 7 (street_123/temperature): Finished sending messages.
+[2025-10-30 23:29:06,846] [INFO] [src.publisher_7:223] - Device 7: Shutting down.
+[2025-10-30 23:29:06,846] [INFO] [src.publisher_7:106] - Device 7 (street_123/temperature): Disconnected cleanly.
+[2025-10-30 23:29:06,873] [INFO] [src.publisher_43:211] - Device 43 (industrial_zone/air_quality): Finished sending messages.
+[2025-10-30 23:29:06,873] [INFO] [src.publisher_43:223] - Device 43: Shutting down.
+[2025-10-30 23:29:06,873] [INFO] [src.publisher_43:106] - Device 43 (industrial_zone/air_quality): Disconnected cleanly.
+[2025-10-30 23:29:06,940] [INFO] [src.publisher_39:211] - Device 39 (park_north/temperature): Finished sending messages.
+[2025-10-30 23:29:06,940] [INFO] [src.publisher_39:223] - Device 39: Shutting down.
+[2025-10-30 23:29:06,940] [INFO] [src.publisher_39:106] - Device 39 (park_north/temperature): Disconnected cleanly.
+[2025-10-30 23:29:07,034] [INFO] [src.publisher_52:211] - Device 52 (city_center/pressure): Finished sending messages.
+[2025-10-30 23:29:07,034] [INFO] [src.publisher_52:223] - Device 52: Shutting down.
+[2025-10-30 23:29:07,035] [INFO] [src.publisher_52:106] - Device 52 (city_center/pressure): Disconnected cleanly.
+[2025-10-30 23:29:07,086] [INFO] [src.publisher_45:211] - Device 45 (industrial_zone/air_quality): Finished sending messages.
+[2025-10-30 23:29:07,086] [INFO] [src.publisher_45:223] - Device 45: Shutting down.
+[2025-10-30 23:29:07,086] [INFO] [src.publisher_45:106] - Device 45 (industrial_zone/air_quality): Disconnected cleanly.
+[2025-10-30 23:29:07,100] [INFO] [src.publisher_17:211] - Device 17 (city_center/pressure): Finished sending messages.
+[2025-10-30 23:29:07,100] [INFO] [src.publisher_17:223] - Device 17: Shutting down.
+[2025-10-30 23:29:07,100] [INFO] [src.publisher_17:106] - Device 17 (city_center/pressure): Disconnected cleanly.
+[2025-10-30 23:29:07,155] [INFO] [src.publisher_19:211] - Device 19 (park_north/temperature): Finished sending messages.
+[2025-10-30 23:29:07,155] [INFO] [src.publisher_19:223] - Device 19: Shutting down.
+[2025-10-30 23:29:07,155] [INFO] [src.publisher_19:106] - Device 19 (park_north/temperature): Disconnected cleanly.
+[2025-10-30 23:29:07,214] [INFO] [src.publisher_63:211] - Device 63 (street_123/temperature): Finished sending messages.
+[2025-10-30 23:29:07,214] [INFO] [src.publisher_63:223] - Device 63: Shutting down.
+[2025-10-30 23:29:07,215] [INFO] [src.publisher_63:106] - Device 63 (street_123/temperature): Disconnected cleanly.
+[2025-10-30 23:29:07,235] [INFO] [src.publisher_41:211] - Device 41 (street_123/pressure): Finished sending messages.
+[2025-10-30 23:29:07,236] [INFO] [src.publisher_41:223] - Device 41: Shutting down.
+[2025-10-30 23:29:07,236] [INFO] [src.publisher_41:106] - Device 41 (street_123/pressure): Disconnected cleanly.
+[2025-10-30 23:29:07,314] [INFO] [src.publisher_40:211] - Device 40 (park_north/temperature): Finished sending messages.
+[2025-10-30 23:29:07,314] [INFO] [src.publisher_40:223] - Device 40: Shutting down.
+[2025-10-30 23:29:07,314] [INFO] [src.publisher_40:106] - Device 40 (park_north/temperature): Disconnected cleanly.
+[2025-10-30 23:29:07,352] [INFO] [src.publisher_51:211] - Device 51 (industrial_zone/pressure): Finished sending messages.
+[2025-10-30 23:29:07,352] [INFO] [src.publisher_51:223] - Device 51: Shutting down.
+[2025-10-30 23:29:07,352] [INFO] [src.publisher_51:106] - Device 51 (industrial_zone/pressure): Disconnected cleanly.
+[2025-10-30 23:29:07,429] [INFO] [src.publisher_42:211] - Device 42 (industrial_zone/air_quality): Finished sending messages.
+[2025-10-30 23:29:07,430] [INFO] [src.publisher_42:223] - Device 42: Shutting down.
+[2025-10-30 23:29:07,430] [INFO] [src.publisher_42:106] - Device 42 (industrial_zone/air_quality): Disconnected cleanly.
+[2025-10-30 23:29:07,463] [INFO] [src.publisher_23:211] - Device 23 (street_123/temperature): Finished sending messages.
+[2025-10-30 23:29:07,463] [INFO] [src.publisher_23:223] - Device 23: Shutting down.
+[2025-10-30 23:29:07,463] [INFO] [src.publisher_23:106] - Device 23 (street_123/temperature): Disconnected cleanly.
+[2025-10-30 23:29:07,515] [INFO] [src.publisher_21:211] - Device 21 (park_north/temperature): Finished sending messages.
+[2025-10-30 23:29:07,515] [INFO] [src.publisher_56:211] - Device 56 (city_center/air_quality): Finished sending messages.
+[2025-10-30 23:29:07,516] [INFO] [src.publisher_21:223] - Device 21: Shutting down.
+[2025-10-30 23:29:07,516] [INFO] [src.publisher_56:223] - Device 56: Shutting down.
+[2025-10-30 23:29:07,516] [INFO] [src.publisher_21:106] - Device 21 (park_north/temperature): Disconnected cleanly.
+[2025-10-30 23:29:07,516] [INFO] [src.publisher_56:106] - Device 56 (city_center/air_quality): Disconnected cleanly.
+[2025-10-30 23:29:07,577] [INFO] [src.publisher_71:211] - Device 71 (park_north/humidity): Finished sending messages.
+[2025-10-30 23:29:07,577] [INFO] [src.publisher_71:223] - Device 71: Shutting down.
+[2025-10-30 23:29:07,577] [INFO] [src.publisher_71:106] - Device 71 (park_north/humidity): Disconnected cleanly.
+[2025-10-30 23:29:07,626] [INFO] [src.publisher_37:211] - Device 37 (city_center/pressure): Finished sending messages.
+[2025-10-30 23:29:07,626] [INFO] [src.publisher_37:223] - Device 37: Shutting down.
+[2025-10-30 23:29:07,626] [INFO] [src.publisher_37:106] - Device 37 (city_center/pressure): Disconnected cleanly.
+[2025-10-30 23:29:07,745] [INFO] [src.publisher_73:211] - Device 73 (industrial_zone/temperature): Finished sending messages.
+[2025-10-30 23:29:07,745] [INFO] [src.publisher_73:223] - Device 73: Shutting down.
+[2025-10-30 23:29:07,745] [INFO] [src.publisher_73:106] - Device 73 (industrial_zone/temperature): Disconnected cleanly.
+[2025-10-30 23:29:07,779] [INFO] [src.publisher_35:211] - Device 35 (city_center/humidity): Finished sending messages.
+[2025-10-30 23:29:07,783] [INFO] [src.publisher_35:223] - Device 35: Shutting down.
+[2025-10-30 23:29:07,783] [INFO] [src.publisher_35:106] - Device 35 (city_center/humidity): Disconnected cleanly.
+[2025-10-30 23:29:07,817] [INFO] [src.publisher_64:211] - Device 64 (street_123/temperature): Finished sending messages.
+[2025-10-30 23:29:07,817] [INFO] [src.publisher_64:223] - Device 64: Shutting down.
+[2025-10-30 23:29:07,818] [INFO] [src.publisher_64:106] - Device 64 (street_123/temperature): Disconnected cleanly.
+[2025-10-30 23:29:07,914] [INFO] [src.publisher_46:211] - Device 46 (park_north/air_quality): Finished sending messages.
+[2025-10-30 23:29:07,914] [INFO] [src.publisher_46:223] - Device 46: Shutting down.
+[2025-10-30 23:29:07,914] [INFO] [src.publisher_46:106] - Device 46 (park_north/air_quality): Disconnected cleanly.
+[2025-10-30 23:29:07,921] [INFO] [src.publisher_60:211] - Device 60 (industrial_zone/temperature): Finished sending messages.
+[2025-10-30 23:29:07,921] [INFO] [src.publisher_60:223] - Device 60: Shutting down.
+[2025-10-30 23:29:07,921] [INFO] [src.publisher_60:106] - Device 60 (industrial_zone/temperature): Disconnected cleanly.
+[2025-10-30 23:29:08,057] [INFO] [src.publisher_55:211] - Device 55 (city_center/pressure): Finished sending messages.
+[2025-10-30 23:29:08,057] [INFO] [src.publisher_55:223] - Device 55: Shutting down.
+[2025-10-30 23:29:08,057] [INFO] [src.publisher_55:106] - Device 55 (city_center/pressure): Disconnected cleanly.
+[2025-10-30 23:29:08,117] [INFO] [src.publisher_34:211] - Device 34 (park_north/temperature): Finished sending messages.
+[2025-10-30 23:29:08,117] [INFO] [src.publisher_34:223] - Device 34: Shutting down.
+[2025-10-30 23:29:08,118] [INFO] [src.publisher_34:106] - Device 34 (park_north/temperature): Disconnected cleanly.
+[2025-10-30 23:29:08,213] [INFO] [src.publisher_44:211] - Device 44 (street_123/air_quality): Finished sending messages.
+[2025-10-30 23:29:08,214] [INFO] [src.publisher_44:223] - Device 44: Shutting down.
+[2025-10-30 23:29:08,214] [INFO] [src.publisher_44:106] - Device 44 (street_123/air_quality): Disconnected cleanly.
+[2025-10-30 23:29:08,281] [INFO] [src.publisher_47:211] - Device 47 (park_north/temperature): Finished sending messages.
+[2025-10-30 23:29:08,281] [INFO] [src.publisher_47:223] - Device 47: Shutting down.
+[2025-10-30 23:29:08,281] [INFO] [src.publisher_47:106] - Device 47 (park_north/temperature): Disconnected cleanly.
+[2025-10-30 23:29:08,398] [INFO] [src.publisher_65:211] - Device 65 (city_center/temperature): Finished sending messages.
+[2025-10-30 23:29:08,398] [INFO] [src.publisher_65:223] - Device 65: Shutting down.
+[2025-10-30 23:29:08,398] [INFO] [src.publisher_65:106] - Device 65 (city_center/temperature): Disconnected cleanly.
+[2025-10-30 23:29:08,423] [INFO] [src.publisher_50:211] - Device 50 (park_north/pressure): Finished sending messages.
+[2025-10-30 23:29:08,423] [INFO] [src.publisher_50:223] - Device 50: Shutting down.
+[2025-10-30 23:29:08,423] [INFO] [src.publisher_50:106] - Device 50 (park_north/pressure): Disconnected cleanly.
+[2025-10-30 23:29:08,425] [INFO] [src.publisher_38:211] - Device 38 (industrial_zone/pressure): Finished sending messages.
+[2025-10-30 23:29:08,425] [INFO] [src.publisher_38:223] - Device 38: Shutting down.
+[2025-10-30 23:29:08,425] [INFO] [src.publisher_38:106] - Device 38 (industrial_zone/pressure): Disconnected cleanly.
+[2025-10-30 23:29:08,476] [INFO] [src.publisher_70:211] - Device 70 (industrial_zone/air_quality): Finished sending messages.
+[2025-10-30 23:29:08,476] [INFO] [src.publisher_70:223] - Device 70: Shutting down.
+[2025-10-30 23:29:08,476] [INFO] [src.publisher_70:106] - Device 70 (industrial_zone/air_quality): Disconnected cleanly.
+[2025-10-30 23:29:08,539] [INFO] [src.publisher_76:211] - Device 76 (city_center/pressure): Finished sending messages.
+[2025-10-30 23:29:08,539] [INFO] [src.publisher_76:223] - Device 76: Shutting down.
+[2025-10-30 23:29:08,539] [INFO] [src.publisher_76:106] - Device 76 (city_center/pressure): Disconnected cleanly.
+[2025-10-30 23:29:08,626] [INFO] [src.publisher_66:211] - Device 66 (street_123/humidity): Finished sending messages.
+[2025-10-30 23:29:08,626] [INFO] [src.publisher_66:223] - Device 66: Shutting down.
+[2025-10-30 23:29:08,626] [INFO] [src.publisher_66:106] - Device 66 (street_123/humidity): Disconnected cleanly.
+[2025-10-30 23:29:08,700] [INFO] [src.publisher_74:211] - Device 74 (city_center/humidity): Finished sending messages.
+[2025-10-30 23:29:08,700] [INFO] [src.publisher_67:211] - Device 67 (industrial_zone/humidity): Finished sending messages.
+[2025-10-30 23:29:08,700] [INFO] [src.publisher_67:223] - Device 67: Shutting down.
+[2025-10-30 23:29:08,700] [INFO] [src.publisher_74:223] - Device 74: Shutting down.
+[2025-10-30 23:29:08,701] [INFO] [src.publisher_67:106] - Device 67 (industrial_zone/humidity): Disconnected cleanly.
+[2025-10-30 23:29:08,701] [INFO] [src.publisher_74:106] - Device 74 (city_center/humidity): Disconnected cleanly.
+[2025-10-30 23:29:08,721] [INFO] [src.publisher_53:211] - Device 53 (park_north/pressure): Finished sending messages.
+[2025-10-30 23:29:08,721] [INFO] [src.publisher_53:223] - Device 53: Shutting down.
+[2025-10-30 23:29:08,721] [INFO] [src.publisher_53:106] - Device 53 (park_north/pressure): Disconnected cleanly.
+[2025-10-30 23:29:08,797] [INFO] [src.publisher_54:211] - Device 54 (industrial_zone/air_quality): Finished sending messages.
+[2025-10-30 23:29:08,797] [INFO] [src.publisher_54:223] - Device 54: Shutting down.
+[2025-10-30 23:29:08,797] [INFO] [src.publisher_54:106] - Device 54 (industrial_zone/air_quality): Disconnected cleanly.
+[2025-10-30 23:29:08,839] [INFO] [src.publisher_83:211] - Device 83 (park_north/pressure): Finished sending messages.
+[2025-10-30 23:29:08,840] [INFO] [src.publisher_83:223] - Device 83: Shutting down.
+[2025-10-30 23:29:08,840] [INFO] [src.publisher_83:106] - Device 83 (park_north/pressure): Disconnected cleanly.
+[2025-10-30 23:29:08,845] [INFO] [src.publisher_59:211] - Device 59 (industrial_zone/pressure): Finished sending messages.
+[2025-10-30 23:29:08,845] [INFO] [src.publisher_59:223] - Device 59: Shutting down.
+[2025-10-30 23:29:08,845] [INFO] [src.publisher_59:106] - Device 59 (industrial_zone/pressure): Disconnected cleanly.
+[2025-10-30 23:29:08,889] [INFO] [src.publisher_57:211] - Device 57 (park_north/pressure): Finished sending messages.
+[2025-10-30 23:29:08,889] [INFO] [src.publisher_57:223] - Device 57: Shutting down.
+[2025-10-30 23:29:08,889] [INFO] [src.publisher_57:106] - Device 57 (park_north/pressure): Disconnected cleanly.
+[2025-10-30 23:29:08,985] [INFO] [src.publisher_61:211] - Device 61 (city_center/humidity): Finished sending messages.
+[2025-10-30 23:29:08,985] [INFO] [src.publisher_61:223] - Device 61: Shutting down.
+[2025-10-30 23:29:08,985] [INFO] [src.publisher_61:106] - Device 61 (city_center/humidity): Disconnected cleanly.
+[2025-10-30 23:29:09,018] [INFO] [src.publisher_58:211] - Device 58 (city_center/humidity): Finished sending messages.
+[2025-10-30 23:29:09,018] [INFO] [src.publisher_58:223] - Device 58: Shutting down.
+[2025-10-30 23:29:09,019] [INFO] [src.publisher_58:106] - Device 58 (city_center/humidity): Disconnected cleanly.
+[2025-10-30 23:29:09,059] [INFO] [src.publisher_88:211] - Device 88 (street_123/air_quality): Finished sending messages.
+[2025-10-30 23:29:09,060] [INFO] [src.publisher_88:223] - Device 88: Shutting down.
+[2025-10-30 23:29:09,060] [INFO] [src.publisher_88:106] - Device 88 (street_123/air_quality): Disconnected cleanly.
+[2025-10-30 23:29:09,068] [INFO] [src.publisher_77:211] - Device 77 (city_center/pressure): Finished sending messages.
+[2025-10-30 23:29:09,068] [INFO] [src.publisher_77:223] - Device 77: Shutting down.
+[2025-10-30 23:29:09,069] [INFO] [src.publisher_77:106] - Device 77 (city_center/pressure): Disconnected cleanly.
+[2025-10-30 23:29:09,088] [INFO] [src.publisher_81:211] - Device 81 (street_123/temperature): Finished sending messages.
+[2025-10-30 23:29:09,088] [INFO] [src.publisher_81:223] - Device 81: Shutting down.
+[2025-10-30 23:29:09,088] [INFO] [src.publisher_81:106] - Device 81 (street_123/temperature): Disconnected cleanly.
+[2025-10-30 23:29:09,096] [INFO] [src.publisher_98:211] - Device 98 (park_north/temperature): Finished sending messages.
+[2025-10-30 23:29:09,096] [INFO] [src.publisher_98:223] - Device 98: Shutting down.
+[2025-10-30 23:29:09,096] [INFO] [src.publisher_98:106] - Device 98 (park_north/temperature): Disconnected cleanly.
+[2025-10-30 23:29:09,183] [INFO] [src.publisher_62:211] - Device 62 (street_123/pressure): Finished sending messages.
+[2025-10-30 23:29:09,183] [INFO] [src.publisher_62:223] - Device 62: Shutting down.
+[2025-10-30 23:29:09,183] [INFO] [src.publisher_62:106] - Device 62 (street_123/pressure): Disconnected cleanly.
+[2025-10-30 23:29:09,217] [INFO] [src.publisher_75:211] - Device 75 (street_123/temperature): Finished sending messages.
+[2025-10-30 23:29:09,217] [INFO] [src.publisher_75:223] - Device 75: Shutting down.
+[2025-10-30 23:29:09,217] [INFO] [src.publisher_75:106] - Device 75 (street_123/temperature): Disconnected cleanly.
+[2025-10-30 23:29:09,321] [INFO] [src.publisher_80:211] - Device 80 (street_123/temperature): Finished sending messages.
+[2025-10-30 23:29:09,321] [INFO] [src.publisher_80:223] - Device 80: Shutting down.
+[2025-10-30 23:29:09,321] [INFO] [src.publisher_80:106] - Device 80 (street_123/temperature): Disconnected cleanly.
+[2025-10-30 23:29:09,342] [INFO] [src.publisher_72:211] - Device 72 (industrial_zone/humidity): Finished sending messages.
+[2025-10-30 23:29:09,342] [INFO] [src.publisher_72:223] - Device 72: Shutting down.
+[2025-10-30 23:29:09,342] [INFO] [src.publisher_72:106] - Device 72 (industrial_zone/humidity): Disconnected cleanly.
+[2025-10-30 23:29:09,718] [INFO] [src.publisher_79:211] - Device 79 (city_center/humidity): Finished sending messages.
+[2025-10-30 23:29:09,718] [INFO] [src.publisher_79:223] - Device 79: Shutting down.
+[2025-10-30 23:29:09,718] [INFO] [src.publisher_79:106] - Device 79 (city_center/humidity): Disconnected cleanly.
+[2025-10-30 23:29:09,847] [INFO] [src.publisher_86:211] - Device 86 (street_123/humidity): Finished sending messages.
+[2025-10-30 23:29:09,847] [INFO] [src.publisher_86:223] - Device 86: Shutting down.
+[2025-10-30 23:29:09,847] [INFO] [src.publisher_86:106] - Device 86 (street_123/humidity): Disconnected cleanly.
+[2025-10-30 23:29:09,865] [INFO] [src.publisher_95:211] - Device 95 (park_north/air_quality): Finished sending messages.
+[2025-10-30 23:29:09,865] [INFO] [src.publisher_95:223] - Device 95: Shutting down.
+[2025-10-30 23:29:09,865] [INFO] [src.publisher_95:106] - Device 95 (park_north/air_quality): Disconnected cleanly.
+[2025-10-30 23:29:10,083] [INFO] [src.publisher_82:211] - Device 82 (industrial_zone/humidity): Finished sending messages.
+[2025-10-30 23:29:10,084] [INFO] [src.publisher_82:223] - Device 82: Shutting down.
+[2025-10-30 23:29:10,084] [INFO] [src.publisher_82:106] - Device 82 (industrial_zone/humidity): Disconnected cleanly.
+[2025-10-30 23:29:10,153] [INFO] [src.publisher_91:211] - Device 91 (industrial_zone/pressure): Finished sending messages.
+[2025-10-30 23:29:10,153] [INFO] [src.publisher_91:223] - Device 91: Shutting down.
+[2025-10-30 23:29:10,153] [INFO] [src.publisher_91:106] - Device 91 (industrial_zone/pressure): Disconnected cleanly.
+[2025-10-30 23:29:10,217] [INFO] [src.publisher_93:211] - Device 93 (street_123/humidity): Finished sending messages.
+[2025-10-30 23:29:10,217] [INFO] [src.publisher_93:223] - Device 93: Shutting down.
+[2025-10-30 23:29:10,217] [INFO] [src.publisher_93:106] - Device 93 (street_123/humidity): Disconnected cleanly.
+[2025-10-30 23:29:10,256] [INFO] [src.publisher_89:211] - Device 89 (street_123/temperature): Finished sending messages.
+[2025-10-30 23:29:10,257] [INFO] [src.publisher_89:223] - Device 89: Shutting down.
+[2025-10-30 23:29:10,257] [INFO] [src.publisher_89:106] - Device 89 (street_123/temperature): Disconnected cleanly.
+[2025-10-30 23:29:10,286] [INFO] [src.publisher_69:211] - Device 69 (street_123/humidity): Finished sending messages.
+[2025-10-30 23:29:10,286] [INFO] [src.publisher_69:223] - Device 69: Shutting down.
+[2025-10-30 23:29:10,286] [INFO] [src.publisher_69:106] - Device 69 (street_123/humidity): Disconnected cleanly.
+[2025-10-30 23:29:10,396] [INFO] [src.publisher_96:211] - Device 96 (park_north/temperature): Finished sending messages.
+[2025-10-30 23:29:10,396] [INFO] [src.publisher_96:223] - Device 96: Shutting down.
+[2025-10-30 23:29:10,396] [INFO] [src.publisher_96:106] - Device 96 (park_north/temperature): Disconnected cleanly.
+[2025-10-30 23:29:10,420] [INFO] [src.publisher_97:211] - Device 97 (industrial_zone/air_quality): Finished sending messages.
+[2025-10-30 23:29:10,421] [INFO] [src.publisher_97:223] - Device 97: Shutting down.
+[2025-10-30 23:29:10,421] [INFO] [src.publisher_97:106] - Device 97 (industrial_zone/air_quality): Disconnected cleanly.
+[2025-10-30 23:29:10,452] [INFO] [src.publisher_87:211] - Device 87 (industrial_zone/humidity): Finished sending messages.
+[2025-10-30 23:29:10,452] [INFO] [src.publisher_87:223] - Device 87: Shutting down.
+[2025-10-30 23:29:10,452] [INFO] [src.publisher_87:106] - Device 87 (industrial_zone/humidity): Disconnected cleanly.
+[2025-10-30 23:29:10,512] [INFO] [src.publisher_99:211] - Device 99 (city_center/humidity): Finished sending messages.
+[2025-10-30 23:29:10,513] [INFO] [src.publisher_99:223] - Device 99: Shutting down.
+[2025-10-30 23:29:10,513] [INFO] [src.publisher_99:106] - Device 99 (city_center/humidity): Disconnected cleanly.
+[2025-10-30 23:29:10,571] [INFO] [src.publisher_100:211] - Device 100 (city_center/humidity): Finished sending messages.
+[2025-10-30 23:29:10,571] [INFO] [src.publisher_100:223] - Device 100: Shutting down.
+[2025-10-30 23:29:10,572] [INFO] [src.publisher_100:106] - Device 100 (city_center/humidity): Disconnected cleanly.
+[2025-10-30 23:29:10,851] [INFO] [src.publisher_78:211] - Device 78 (city_center/air_quality): Finished sending messages.
+[2025-10-30 23:29:10,852] [INFO] [src.publisher_78:223] - Device 78: Shutting down.
+[2025-10-30 23:29:10,852] [INFO] [src.publisher_78:106] - Device 78 (city_center/air_quality): Disconnected cleanly.
+[2025-10-30 23:29:10,894] [INFO] [src.publisher_84:211] - Device 84 (park_north/pressure): Finished sending messages.
+[2025-10-30 23:29:10,894] [INFO] [src.publisher_84:223] - Device 84: Shutting down.
+[2025-10-30 23:29:10,894] [INFO] [src.publisher_84:106] - Device 84 (park_north/pressure): Disconnected cleanly.
+[2025-10-30 23:29:11,065] [INFO] [src.publisher_92:211] - Device 92 (city_center/humidity): Finished sending messages.
+[2025-10-30 23:29:11,065] [INFO] [src.publisher_92:223] - Device 92: Shutting down.
+[2025-10-30 23:29:11,065] [INFO] [src.publisher_92:106] - Device 92 (city_center/humidity): Disconnected cleanly.
+[2025-10-30 23:29:11,170] [INFO] [src.publisher_94:211] - Device 94 (city_center/humidity): Finished sending messages.
+[2025-10-30 23:29:11,171] [INFO] [src.publisher_94:223] - Device 94: Shutting down.
+[2025-10-30 23:29:11,171] [INFO] [src.publisher_94:106] - Device 94 (city_center/humidity): Disconnected cleanly.
+[2025-10-30 23:29:11,406] [INFO] [src.publisher_90:211] - Device 90 (park_north/air_quality): Finished sending messages.
+[2025-10-30 23:29:11,406] [INFO] [src.publisher_90:223] - Device 90: Shutting down.
+[2025-10-30 23:29:11,406] [INFO] [src.publisher_90:106] - Device 90 (park_north/air_quality): Disconnected cleanly.
+[2025-10-30 23:29:11,696] [INFO] [src.publisher_85:211] - Device 85 (park_north/pressure): Finished sending messages.
+[2025-10-30 23:29:11,696] [INFO] [src.publisher_85:223] - Device 85: Shutting down.
+[2025-10-30 23:29:11,696] [INFO] [src.publisher_85:106] - Device 85 (park_north/pressure): Disconnected cleanly.

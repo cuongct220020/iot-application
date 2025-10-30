@@ -1,19 +1,20 @@
 import paho.mqtt.client as mqtt
-import logging
 import datetime
 import random
 import json
 import time
 import threading
+import logging
 from typing import Optional, Dict, Any
 
-from .utils import Statistics
-from .constants import (
+from src.utils.statistics_utils import Statistics
+from src.constants.constants import (
     ENVIRONMENT_TOPIC_BASE,
     ENVIRONMENT_LOCATIONS,
     ENVIRONMENT_SENSOR_TYPES,
     SENSOR_VALUE_RANGES
 )
+from src.utils.logger_utils import configure_logger
 
 class DevicePublisher:
     """
@@ -33,6 +34,7 @@ class DevicePublisher:
         statistics: "Statistics",
         location: Optional[str] = None,
         sensor_type: Optional[str] = None,
+        logger: Optional[logging.Logger] = None,
     ):
         """
         Initializes the DevicePublisher instance.
@@ -46,6 +48,7 @@ class DevicePublisher:
             statistics: A Statistics object to record operational metrics.
             location: The physical location of the device. If None, a random one is chosen.
             sensor_type: The type of sensor for the device. If None, a random one is chosen.
+            logger: A configured logger instance.
         """
         self.device_id: str = device_id
         self.broker: str = broker
@@ -53,6 +56,7 @@ class DevicePublisher:
         self.total_messages_per_device: int = total_messages_per_device
         self.publish_interval: float = publish_interval
         self.statistics: "Statistics" = statistics
+        self.logger = logger or configure_logger(f'src.publisher_{self.device_id}')
 
         # Assign location and sensor type, defaulting to random choices if not provided.
         self.location: str = location or random.choice(ENVIRONMENT_LOCATIONS)
@@ -75,31 +79,31 @@ class DevicePublisher:
         self.client.on_publish = self.on_publish
         self.client.on_disconnect = self.on_disconnect
 
-    def on_connect(self, rc: int) -> None:
+    def on_connect(self, client, userdata, flags, rc):
         """Callback invoked upon connection to the MQTT broker."""
         if rc == mqtt.MQTT_ERR_SUCCESS:
-            logging.info(f"Device {self.device_id} ({self.location}/{self.sensor_type}): Connected successfully")
+            self.logger.info(f"Device {self.device_id} ({self.location}/{self.sensor_type}): Connected successfully")
             self.statistics.update_stats("active_publishers")
             self.connected_event.set()  # Signal that connection is established
         else:
-            logging.error(f"Device {self.device_id} ({self.location}/{self.sensor_type}): Connection failed (RC: {rc})")
+            self.logger.error(f"Device {self.device_id} ({self.location}/{self.sensor_type}): Connection failed (RC: {rc})")
             self.statistics.update_stats("errors")
 
-    def on_publish(self, client: mqtt.Client, userdata: Any, mid: int) -> None:
+    def on_publish(self, client, userdata, mid):
         """Callback invoked when a message is successfully published."""
         self.statistics.update_stats("total_published")
 
-    def on_disconnect(self, rc: int) -> None:
+    def on_disconnect(self, client, userdata, rc):
         """Callback invoked upon disconnection from the MQTT broker."""
         # A non-zero return code indicates an unexpected disconnect.
         if rc != mqtt.MQTT_ERR_SUCCESS:
-            logging.warning(
+            self.logger.warning(
                 f"Device {self.device_id} ({self.location}/{self.sensor_type}): "
                 f"Unexpectedly disconnected (RC: {rc})."
             )
             self.statistics.update_stats("errors")
         else:
-            logging.info(f"Device {self.device_id} ({self.location}/{self.sensor_type}): Disconnected cleanly.")
+            self.logger.info(f"Device {self.device_id} ({self.location}/{self.sensor_type}): Disconnected cleanly.")
 
         self.connected_event.clear()  # Reset event on disconnect
         self.statistics.update_stats("active_publishers", -1)
@@ -130,14 +134,14 @@ class DevicePublisher:
             result = self.client.publish(self.topic, json_payload, qos=1)
 
             if result.rc != mqtt.MQTT_ERR_SUCCESS:
-                logging.error(
+                self.logger.error(
                     f"Device {self.device_id} ({self.location}/{self.sensor_type}): "
                     f"Failed to publish message. MQTT Error: {result.rc}"
                 )
                 self.statistics.update_stats("errors")
 
         except Exception as e:
-            logging.error(
+            self.logger.error(
                 f"Device {self.device_id} ({self.location}/{self.sensor_type}): "
                 f"An exception occurred during publish: {e}"
             )
@@ -156,14 +160,14 @@ class DevicePublisher:
 
             # Wait for the on_connect callback to set the event, with a timeout.
             if not self.connected_event.wait(timeout=10.0):
-                logging.error(f"Device {self.device_id} ({self.location}/{self.sensor_type}): Connection timeout.")
+                self.logger.error(f"Device {self.device_id} ({self.location}/{self.sensor_type}): Connection timeout.")
                 self.statistics.update_stats("errors")
                 self.client.loop_stop()  # Clean up the network loop on failure.
                 return False
             
             return True
         except (OSError, ConnectionRefusedError) as e:
-            logging.error(
+            self.logger.error(
                 f"Device {self.device_id} ({self.location}/{self.sensor_type}): "
                 f"Connection error - {e}"
             )
@@ -181,18 +185,18 @@ class DevicePublisher:
         connect, publish messages periodically, and disconnect.
         """
         if not self.connect():
-            logging.error(f"Device {self.device_id}: Halting due to connection failure.")
+            self.logger.error(f"Device {self.device_id}: Halting due to connection failure.")
             return
 
         try:
-            logging.info(
+            self.logger.info(
                 f"Device {self.device_id} ({self.location}/{self.sensor_type}): "
                 f"Starting to publish {self.total_messages_per_device} messages."
             )
             for _ in range(self.total_messages_per_device):
                 # If disconnected during the loop, stop publishing.
                 if not self.connected_event.is_set():
-                    logging.warning(
+                    self.logger.warning(
                         f"Device {self.device_id} ({self.location}/{self.sensor_type}): "
                         f"Disconnected unexpectedly. Stopping publish loop."
                     )
@@ -204,17 +208,17 @@ class DevicePublisher:
                 jitter = random.uniform(-0.1, 0.1) * self.publish_interval
                 time.sleep(self.publish_interval + jitter)
 
-            logging.info(
+            self.logger.info(
                 f"Device {self.device_id} ({self.location}/{self.sensor_type}): "
                 f"Finished sending messages."
             )
 
         except Exception as e:
-            logging.critical(
+            self.logger.critical(
                 f"Device {self.device_id} ({self.location}/{self.sensor_type}): "
                 f"A critical error occurred during the run loop: {e}"
             )
             self.statistics.update_stats("errors")
         finally:
-            logging.info(f"Device {self.device_id}: Shutting down.")
+            self.logger.info(f"Device {self.device_id}: Shutting down.")
             self.disconnect()
