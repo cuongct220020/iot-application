@@ -1,7 +1,8 @@
-# Bài 1. Giao tiếp sử dụng HTTP API
+# Báo cáo bài tập HTTP
 
-**Sinh viên:** Đặng Tiến Cường
-**MSSV:** 20220020
+- **Sinh viên:** Đặng Tiến Cường
+- **MSSV:** 20220020
+- **Lớp:** CTTN-KHMT K67
 
 ## Yêu cầu
 Viết chương trình (bằng ngôn ngữ tùy ý: C#, Java, python) thực hiện:
