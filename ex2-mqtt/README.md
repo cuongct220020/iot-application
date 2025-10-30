@@ -1,13 +1,9 @@
 # BÁO CÁO BÀI TẬP MQTT
 
-## MÔ PHỎNG 100 THIẾT BỊ IOT
-
----
-
-**Họ và tên:** [Điền tên của bạn]  
-**MSSV:** [Điền MSSV]  
-**Lớp:** [Điền lớp]  
-**Ngày thực hiện:** [Điền ngày]
+- **Họ và tên:** Đặng Tiến Cường 
+- **MSSV:** 20220020
+- **Lớp:** CTTN-KHMT K67
+- **Ngày thực hiện:** 30/11/2025
 
 ## 1. GIỚI THIỆU
 
@@ -17,225 +13,197 @@ Bài tập thực hiện mô phỏng hệ thống IoT với 100 thiết bị gia
 - **Broker:** EMQX (local)
 - **Công nghệ:** Multi-threading để mô phỏng 100 thiết bị đồng thời
 
-## 2. CÀI ĐẶT MQTT BROKER
+## 2. EMQX BROKER
+### 2.1. Cài đặt
+Nếu chưa cài đặt EMQX, bạn có thể sử dụng Docker để chạy broker:
 
-### 2.1. Lựa chọn Broker
+```bash
+# Pull image EMQX
+docker pull emqx/emqx:latest
 
-**Broker đã chọn:** [Điền EMQX hoặc Mosquitto]
-
-**Lý do lựa chọn:**
-
-- EMQX: Giao diện quản lý trực quan, hỗ trợ dashboard web
-
-### 2.2. Cài đặt
-
-**Hệ điều hành:** [Windows/Linux/MacOS]
-
-**Các bước cài đặt:**
-
-[Mô tả ngắn gọn các bước cài đặt broker]
-
-**Kiểm tra broker:**
- 
-[Chụp ảnh màn hình broker đang chạy - ví dụ: EMQX Dashboard, hoặc command line status của Mosquitto]
-
-### 2.3. Thông số quản lý Broker
-
-#### EMQX Dashboard (nếu dùng EMQX)
-
-**URL truy cập:** http://localhost:18083  
-**Username:** admin  
-**Password:** public
-
-**Các thông số quan trọng:**
-
-| Thông số            | Mô tả                          | Vị trí xem                |
-|---------------------|--------------------------------|---------------------------|
-| Connections         | Số kết nối hiện tại            | Dashboard → Overview      |
-| Subscriptions       | Số subscription đang hoạt động | Dashboard → Subscriptions |
-| Topics              | Danh sách topics               | Dashboard → Topics        |
-| Message In/Out Rate | Tốc độ tin nhắn                | Dashboard → Metrics       |
-| Uptime              | Thời gian chạy                 | Dashboard → Overview      |
-| Memory Usage        | Bộ nhớ sử dụng                 | Dashboard → Metrics       |
-
-[Chụp ảnh Dashboard EMQX hiển thị Overview với các metrics]
-
-#### Mosquitto (nếu dùng Mosquitto)
-
-**File cấu hình:** `/etc/mosquitto/mosquitto.conf` (Linux) hoặc `C:\Program Files\mosquitto\mosquitto.conf` (Windows)
-
-**Các thông số cấu hình:**
-
-```conf
-port 1883                      # Port mặc định
-max_connections -1             # Số kết nối tối đa (-1 = unlimited)
-allow_anonymous true           # Cho phép kết nối không cần authentication
-log_dest file /var/log/mosquitto/mosquitto.log
+# Chạy container EMQX
+docker run -d --name emqx-mqtt -p 1883:1883 -p 8083:8083 -p 8084:8084 -p 18083:18083 emqx/emqx:latest
 ```
 
-## 3. KIẾN TRÚC HỆ THỐNG
+### 2.2. EMQX Dashboard
 
-### 3.1. Sơ đồ tổng quan
+![EMQX-DASHBOARD](./images/emqx-dashboard.png)
+
+Truy cập vào EMQX Dashboard để kiểm tra trạng thái hoạt động của broker.
+- **URL truy cập:** http://localhost:18083  
+- **Username:** admin  
+- **Password:** public
+
+<table>
+      <caption>Các thông số quan trọng</caption>
+      <thead>
+        <tr>
+          <th>Thông số</th>
+          <th>Mô tả</th>
+          <th>Vị trí xem</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Connections</td>
+          <td>Số kết nối hiện tại</td>
+          <td>Dashboard → Overview</td>
+        </tr>
+        <tr>
+          <td>Subscriptions</td>
+          <td>Số subscription đang hoạt động</td>
+          <td>Dashboard → Subscriptions</td>
+        </tr>
+        <tr>
+          <td>Topics</td>
+          <td>Danh sách topics</td>
+          <td>Dashboard → Topics</td>
+        </tr>
+        <tr>
+          <td>Message In/Out Rate</td>
+          <td>Tốc độ tin nhắn</td>
+          <td>Dashboard → Metrics</td>
+        </tr>
+        <tr>
+          <td>Uptime</td>
+          <td>Thời gian chạy</td>
+          <td>Dashboard → Overview</td>
+        </tr>
+        <tr>
+          <td>Memory Usage</td>
+          <td>Bộ nhớ sử dụng</td>
+          <td>Dashboard → Metrics</td>
+        </tr>
+      </tbody>
+    </table>
+
+## 3. CẤU TRÚC DỰ ÁN
 
 ```
+ex2-mqtt/
+├── main.py                     # Entry point của chương trình
+├── requirements.txt           # Danh sách các thư viện phụ thuộc
+├── README.md                  # Tài liệu hướng dẫn
+├── cli/                       # Module command line interface
+│   ├── __init__.py
+│   └── commands.py            # Xử lý các lệnh CLI
+├── logs/                      # Thư mục lưu trữ log
+├── images/                    # Thư mục lưu ảnh
+├── src/                       # Source code chính
+│   ├── __init__.py
+│   ├── simulation.py          # Lớp mô phỏng tổng thể
+│   ├── constants/             # Hằng số và cấu hình
+│   │   ├── __init__.py
+│   │   └── constants.py       # Các hằng số MQTT và thiết bị
+│   ├── publisher/             # Module publisher
+│   │   ├── __init__.py
+│   │   └── publisher.py       # Lớp thiết bị publisher
+│   ├── subscriber/            # Module subscriber
+│   │   ├── __init__.py
+│   │   └── subscriber.py      # Lớp thiết bị subscriber
+│   └── utils/                 # Công cụ hỗ trợ
+│       ├── __init__.py
+│       ├── logger_utils.py    # Cấu hình logging
+│       └── statistics_utils.py # Quản lý thống kê
 ```
-┌─────────────────────────────────────────────────────────────────┐
-│                        MQTT BROKER (EMQX)                              │
-│                                                       │
-│                      localhost:1883                              │
-└────────────┬────────────────────────────────────┬────────────────┘
-             │ PUBLISH                            │ SUBSCRIBE
-             │ (QoS 1)                            │ (Wildcard: iot/environment/#)
-             │                                    │
-    ┌────────┴─────────┐                  ┌───────┴─────────┐
-    │  100 Publishers  │                  │  N Subscribers  │
-    │   (Threading)    │                  │   (Threading)   │
-    └──────────────────┘                  └─────────────────┘
-           │                                       │
-           │                                       │
-    ┌──────┴──────┐                        ┌──────┴──────┐
-    │ Device 1    │                        │  Nhận và    │
-    │ Device 2    │                        │  xử lý dữ   │
-    │ Device 3    │                        │  liệu từ    │
-    │    ...      │                        │  100 thiết  │
-    │ Device 100  │                        │  bị         │
-    └─────────────┘                        └─────────────┘
-         │
-         │ Topic: iot/environment/city_center/temperature
-         │ Topic: iot/environment/park_north/humidity
-         │ Topic: iot/environment/industrial_zone/air_quality
-         │        ...
-         │ Topic: iot/environment/{location}/{sensor_type}
-```
-
-### 3.2. Luồng dữ liệu
-
-1. **Khởi tạo:** Tạo 100 threads cho publishers và N threads cho subscribers.
-2. **Kết nối:** Mỗi device và subscriber kết nối đến broker với Client ID riêng.
-3. **Subscribe:** Mỗi subscriber subscribe wildcard `iot/environment/#` để nhận dữ liệu từ tất cả các thiết bị môi trường.
-4. **Publish:** Mỗi device gửi 10 tin nhắn, mỗi 5 giây, đến các topic dạng `iot/environment/{location}/{sensor_type}`.
-5. **Receive:** Các subscribers nhận và xử lý tất cả tin nhắn.
-6. **Statistics:** Cập nhật thống kê real-time.
 
 ## 4. THIẾT KẾ CHƯƠNG TRÌNH
 
-### 4.1. Cấu trúc file
+### 4.1. Cấu trúc mô phỏng
 
+Chương trình được thiết kế theo mô hình publisher/subscriber (pub/sub) của MQTT:
 
-### 4.2. Class DevicePublisher
+- **Publishers (Thiết bị cảm biến):** Mô phỏng 100 thiết bị IoT gửi dữ liệu cảm biến
+- **Subscribers (Trạm nhận dữ liệu):** Mô phỏng 3 trạm nhận dữ liệu từ các thiết bị
+- **Broker:** EMQX hoạt động như trung gian truyền tin MQTT
 
-**Chức năng:** Mô phỏng 1 thiết bị IoT gửi dữ liệu môi trường. Mỗi publisher sẽ được gán ngẫu nhiên một `location` và `sensor_type` từ danh sách cấu hình sẵn, và gửi dữ liệu đến topic tương ứng.
+### 4.2. Lớp DevicePublisher
 
-**Code chính:**
+Lớp này đại diện cho một thiết bị IoT gửi dữ liệu cảm biến, có các đặc điểm:
 
-```python
-class DevicePublisher:
-    def __init__(self, device_id, broker, port, total_messages_per_device, publish_interval, statistics):
-        self.device_id = device_id
-        self.broker = broker
-        self.port = port
-        self.total_messages_per_device = total_messages_per_device
-        self.publish_interval = publish_interval
-        self.statistics = statistics
-        self.client = mqtt.Client(client_id=f"publisher_{device_id}")
-        
-        # Gán ngẫu nhiên location và sensor_type
-        self.location = random.choice(ENVIRONMENT_LOCATIONS)
-        self.sensor_type = random.choice(ENVIRONMENT_SENSOR_TYPES)
-        self.topic = f"{ENVIRONMENT_TOPIC_BASE}/{self.location}/{self.sensor_type}"
-        
-        self.packet_no = 0
-        self.is_connected = False
+- Kết nối đến MQTT broker với client ID duy nhất
+- Gửi dữ liệu cảm biến định kỳ (mặc định mỗi 5 giây)
+- Mỗi thiết bị gửi 10 tin nhắn (có thể cấu hình)
+- Dữ liệu cảm biến bao gồm: nhiệt độ, độ ẩm, áp suất, chất lượng không khí
+- Các vị trí cảm biến: trung tâm thành phố, công viên phía bắc, khu công nghiệp, đường 123
 
-    # ... (các phương thức khác)
+### 4.3. Lớp DeviceSubscriber
 
-    def generate_sensor_data(self):
-        # Tạo dữ liệu cảm biến ngẫu nhiên dựa trên sensor_type và SENSOR_VALUE_RANGES
-        # ...
-        return {
-            "id": self.device_id,
-            "location": self.location,
-            "sensor_type": self.sensor_type,
-            "packet_no": self.packet_no,
-            "value": sensor_value, # Giá trị cảm biến
-            "timestamp": datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-        }
+Lớp này đại diện cho trạm nhận dữ liệu, có các đặc điểm:
 
-    def run(self):
-        # ... (logic chạy publisher)
+- Đăng ký nhận dữ liệu từ tất cả các topic có dạng `iot/environment/#`
+- Nhận và xử lý thông điệp từ nhiều thiết bị cùng lúc
+- Ghi nhận thống kê về số lượng tin nhắn nhận được
+
+### 4.4. Lớp Simulation
+
+Lớp trung tâm quản lý toàn bộ quá trình mô phỏng:
+
+- Khởi tạo và điều phối các publisher và subscriber
+- Theo dõi thống kê hoạt động
+- Cung cấp 3 chế độ mô phỏng: full, pub-only, sub-only
+
+## 5. SỬ DỤNG CHƯƠNG TRÌNH
+
+### 5.1. Cài đặt dependencies
+
+```bash
+pip install -r requirements.txt
 ```
 
-### 4.3. Class DeviceSubscriber
+### 5.2. Chạy mô phỏng đầy đủ (100 publishers, 3 subscribers)
 
-**Chức năng:** Mỗi instance mô phỏng một subscriber nhận dữ liệu từ tất cả các thiết bị môi trường bằng cách subscribe wildcard `iot/environment/#`.
-
-**Code chính:**
-
-```python
-class DeviceSubscriber:
-    def __init__(self, subscriber_id, broker, port, statistics):
-        self.subscriber_id = subscriber_id
-        self.broker = broker
-        self.port = port
-        self.statistics = statistics
-        self.client = mqtt.Client(client_id=f"subscriber_{subscriber_id}")
-        self.received_messages = {}
-
-    # ... (các phương thức khác)
-
-    def on_connect(self, client, userdata, flags, rc):
-        # Subscribe wildcard topic iot/environment/#
-        # ...
-
-    def on_message(self, client, userdata, msg):
-        # Xử lý tin nhắn nhận được, parse JSON và cập nhật thống kê
-        # ...
-
-    def run(self):
-        # ... (logic chạy subscriber)
+```bash
+python main.py
 ```
 
-### 4.4. Class Simulation
+### 5.3. Chạy với số lượng thiết bị tùy chỉnh
 
-**Chức năng:** Quản lý toàn bộ quá trình mô phỏng, bao gồm khởi tạo và chạy các publishers và subscribers, cũng như thu thập và hiển thị thống kê.
+```bash
+# Chạy với 50 publisher và 2 subscriber
+python main.py --publishers 50 --subscribers 2
 
-**Code chính:**
+# Chạy chỉ với publisher
+python main.py --mode pub-only --publishers 100
 
-```python
-class Simulation:
-    def __init__(self):
-        self.statistics = Statistics()
-        self.subscribers = []
-        self.monitor_thread = None
-
-    def run_full_simulation(self):
-        # Khởi tạo và chạy nhiều subscribers
-        self._run_subscribers()
-        # Khởi tạo và chạy publishers
-        self._run_publishers()
-        # ... (logic quản lý và hiển thị thống kê)
+# Chạy chỉ với subscriber
+python main.py --mode sub-only --subscribers 3
 ```
 
-### 4.5. Multi-threading
+### 5.4. Các tùy chọn khác
 
-**Code khởi tạo threads:**
-
-```python
-def _run_publishers(self):
-    threads = []
-    for i in range(1, NUM_DEVICES + 1):
-        publisher = DevicePublisher(...)
-        thread = threading.Thread(target=publisher.run, daemon=True)
-        threads.append(thread)
-        thread.start()
-    # ...
-
-def _run_subscribers(self):
-    subscriber_threads = []
-    for i in range(1, NUM_SUBSCRIBERS + 1):
-        subscriber = DeviceSubscriber(...)
-        thread = threading.Thread(target=subscriber.run, daemon=True)
-        subscriber_threads.append(thread)
-        thread.start()
-    # ...
+```bash
+python main.py --help
 ```
+
+## 6. KẾT QUẢ MÔ PHỎNG
+
+### 6.1. Thống kê hiệu suất
+
+Chương trình ghi nhận các thống kê sau:
+- Tổng số tin nhắn đã gửi
+- Tổng số tin nhắn đã nhận
+- Số kết nối publisher/subscriber đang hoạt động
+- Số lỗi trong quá trình hoạt động
+
+### 6.2. Mô phỏng với 100 thiết bị
+
+Trong mô phỏng đầy đủ:
+- 100 thiết bị publisher gửi dữ liệu cảm biến
+- 3 trạm subscriber nhận dữ liệu
+- Mỗi thiết bị gửi 10 tin nhắn định kỳ
+- Hệ thống xử lý hơn 1000 tin nhắn qua MQTT broker
+
+Xem kết quả tại đây: ![Output Directory](./ex2-mqtt/logs)
+
+## 7. KẾT LUẬN
+
+Bài tập đã thực hiện thành công mô phỏng hệ thống IoT gồm 100 thiết bị giao tiếp qua giao thức MQTT. Các kết quả đạt được:
+
+- Thiết lập thành công MQTT broker sử dụng EMQX
+- Mô phỏng thành công 100 thiết bị publisher và 3 subscriber hoạt động đồng thời
+- Đảm bảo truyền nhận dữ liệu ổn định qua giao thức MQTT
+- Thu thập và hiển thị thống kê hoạt động của hệ thống
+- Xây dựng hệ thống có khả năng mở rộng và cấu hình linh hoạt
+
+Hệ thống chứng minh hiệu quả của mô hình pub/sub trong việc xử lý dữ liệu từ nhiều thiết bị IoT cùng lúc.
