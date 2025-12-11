@@ -9,7 +9,7 @@
 |-----------|----------|
 | **Họ và tên** | Đặng Tiến Cường|
 | **MSSV** | 20220020 |
-| **Lớp** | CTTN - Khoa học máy Tính |
+| **Lớp** | CTTN - Khoa học máy tính |
 | **Ngày nộp** | 11/12/2025 |
 
 ---
@@ -111,19 +111,9 @@ URL: https://postman-echo.com/get?temp=30.20&humid=54.50
 REQUEST SUCCESSFUL!
 Response Code: 200
 
-📥 RESPONSE PAYLOAD:
+RESPONSE PAYLOAD:
 ------------------------------------------
-{
-  "args": {
-    "temp": "30.20",
-    "humid": "54.50"
-  },
-  "headers": {
-    "host": "postman-echo.com",
-    ...
-  },
-  "url": "https://postman-echo.com/get?temp=30.20&humid=54.50"
-}
+{"args":{"temp":"30.20","humid":"54.50"},"headers":{"host":"postman-echo.com","accept-encoding":"gzip, br","x-forwarded-proto":"https","user-agent":"ESP32HTTPClient"},"url":"https://postman-echo.com/get?temp=30.20&humid=54.50"}
 ------------------------------------------
 ```
 
@@ -169,16 +159,7 @@ Response Code: 200
 
 RESPONSE PAYLOAD:
 ------------------------------------------
-{
-  "args": {},
-  "data": "",
-  "files": {},
-  "form": {
-    "temp": "30.20",
-    "humid": "54.50"
-  },
-  ...
-}
+{"args":{},"data":"","files":{},"form":{"temp":"30.20","humid":"54.50"},"headers":{"host":"postman-echo.com","user-agent":"ESP32HTTPClient","accept-encoding":"gzip, br","content-type":"application/x-www-form-urlencoded","x-forwarded-proto":"https","content-length":"22"},"json":{"temp":"30.20","humid":"54.50"},"url":"https://postman-echo.com/post"}
 ------------------------------------------
 ```
 
@@ -240,16 +221,7 @@ REQUEST SUCCESSFUL!
 Response Code: 200
 
 RESPONSE PAYLOAD:
-{
-  "data": {
-    "temperature": 30.2,
-    "humidity": 54.5,
-    "device": "ESP32",
-    "sensor": "DHT22",
-    "location": "Hanoi, Vietnam"
-  },
-  ...
-}
+{"args":{},"data":{"temperature":30.20000076,"humidity":54.5,"device":"ESP32","sensor":"DHT22","location":"Hanoi, Vietnam","timestamp":15},"files":{},"form":{},"headers":{"host":"postman-echo.com","user-agent":"ESP32HTTPClient","accept-encoding":"gzip, br","content-type":"application/json","x-forwarded-proto":"https","content-length":"120"},"json":{"temperature":30.20000076,"humidity":54.5,"device":"ESP32","sensor":"DHT22","location":"Hanoi, Vietnam","timestamp":15},"url":"https://postman-echo.com/post"}
 
 PARSED RESPONSE DATA:
 ------------------------------------------
