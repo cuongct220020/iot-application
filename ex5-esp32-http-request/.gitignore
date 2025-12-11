@@ -1,0 +1,35 @@
+# -----------------------------
+# PlatformIO (QUAN TRỌNG NHẤT)
+# -----------------------------
+# Thư mục chứa file build, thư viện tải về, firmware (.bin, .elf)
+# Thư mục này rất nặng và sẽ tự được tạo lại khi người khác bấm Build
+.pio/
+.pioenvs/
+.piolibdeps/
+
+# -----------------------------
+# VS Code (Cấu hình riêng tư)
+# -----------------------------
+# Bỏ qua toàn bộ thư mục .vscode vì chứa đường dẫn tuyệt đối trên máy bạn
+.vscode/
+
+# (Tùy chọn) Nếu bạn muốn gợi ý người khác cài PlatformIO/Wokwi
+# thì bỏ comment dòng dưới để giữ lại file extensions.json
+# !.vscode/extensions.json
+
+# File database Intellisense (Rất nặng)
+*.browse.c_cpp.db*
+*.db
+
+# -----------------------------
+# MacOS (Máy của bạn)
+# -----------------------------
+# File rác sinh ra bởi Finder trên Macbook
+.DS_Store
+._*
+
+# -----------------------------
+# Các file tạm thời khác
+# -----------------------------
+ipch/
+*.log
