@@ -1,0 +1,338 @@
+openapi: 3.0.0
+info:
+  title: Sensor API
+  description: API quản lý dữ liệu cảm biến và người dùng
+  version: 1.0.0
+  contact:
+    name: API Support
+    email: support@sensorapi.com
+
+servers:
+  - url: http://localhost:8000
+    description: Development server
+
+tags:
+  - name: SensorData
+    description: Quản lý dữ liệu cảm biến
+  - name: Users
+    description: Quản lý người dùng
+
+paths:
+  /api/sensordata:
+    get:
+      tags:
+        - SensorData
+      summary: Lấy tất cả dữ liệu cảm biến
+      description: Trả về danh sách tất cả các cảm biến trong hệ thống
+      responses:
+        '200':
+          description: Thành công
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/SensorData'
+
+    post:
+      tags:
+        - SensorData
+      summary: Tạo dữ liệu cảm biến mới
+      description: Thêm một cảm biến mới vào hệ thống
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/SensorDataInput'
+            example:
+              sensorName: "Temperature Sensor"
+              sensorValue: 25.5
+      responses:
+        '201':
+          description: Tạo thành công
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/SensorData'
+        '400':
+          description: Dữ liệu không hợp lệ
+
+  /api/sensordata/{id}:
+    get:
+      tags:
+        - SensorData
+      summary: Lấy cảm biến theo ID
+      description: Trả về thông tin chi tiết của một cảm biến
+      parameters:
+        - name: id
+          in: path
+          required: true
+          description: ID của cảm biến
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Thành công
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/SensorData'
+        '404':
+          description: Không tìm thấy cảm biến
+
+    put:
+      tags:
+        - SensorData
+      summary: Cập nhật dữ liệu cảm biến
+      description: Cập nhật thông tin của một cảm biến
+      parameters:
+        - name: id
+          in: path
+          required: true
+          description: ID của cảm biến
+          schema:
+            type: string
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/SensorDataInput'
+            example:
+              sensorName: "Temperature Sensor Updated"
+              sensorValue: 30.0
+      responses:
+        '200':
+          description: Cập nhật thành công
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/SensorData'
+        '404':
+          description: Không tìm thấy cảm biến
+
+    delete:
+      tags:
+        - SensorData
+      summary: Xóa dữ liệu cảm biến
+      description: Xóa một cảm biến khỏi hệ thống
+      parameters:
+        - name: id
+          in: path
+          required: true
+          description: ID của cảm biến
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Xóa thành công
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string
+                    example: "Đã xóa thành công"
+        '404':
+          description: Không tìm thấy cảm biến
+
+  /api/users:
+    get:
+      tags:
+        - Users
+      summary: Lấy tất cả người dùng
+      description: Trả về danh sách tất cả người dùng
+      responses:
+        '200':
+          description: Thành công
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/User'
+
+    post:
+      tags:
+        - Users
+      summary: Tạo người dùng mới
+      description: Thêm người dùng mới vào hệ thống
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/UserInput'
+            example:
+              userName: "johndoe"
+              password: "password123"
+              email: "john@example.com"
+      responses:
+        '201':
+          description: Tạo thành công
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/User'
+        '400':
+          description: Dữ liệu không hợp lệ
+
+  /api/users/{id}:
+    get:
+      tags:
+        - Users
+      summary: Lấy người dùng theo ID
+      description: Trả về thông tin chi tiết của người dùng
+      parameters:
+        - name: id
+          in: path
+          required: true
+          description: ID của người dùng
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Thành công
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/User'
+        '404':
+          description: Không tìm thấy người dùng
+
+    put:
+      tags:
+        - Users
+      summary: Cập nhật người dùng
+      description: Cập nhật thông tin người dùng
+      parameters:
+        - name: id
+          in: path
+          required: true
+          description: ID của người dùng
+          schema:
+            type: string
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/UserInput'
+            example:
+              userName: "johndoe_updated"
+              password: "newpassword123"
+              email: "john.new@example.com"
+      responses:
+        '200':
+          description: Cập nhật thành công
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/User'
+        '404':
+          description: Không tìm thấy người dùng
+
+    delete:
+      tags:
+        - Users
+      summary: Xóa người dùng
+      description: Xóa người dùng khỏi hệ thống
+      parameters:
+        - name: id
+          in: path
+          required: true
+          description: ID của người dùng
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Xóa thành công
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string
+                    example: "Đã xóa thành công"
+        '404':
+          description: Không tìm thấy người dùng
+
+components:
+  schemas:
+    SensorData:
+      type: object
+      properties:
+        _id:
+          type: string
+          description: ID tự động sinh bởi MongoDB
+          example: "6581234567890abcdef12345"
+        sensorName:
+          type: string
+          description: Tên cảm biến
+          example: "Temperature Sensor"
+        sensorValue:
+          type: number
+          format: float
+          description: Giá trị đo được từ cảm biến
+          example: 25.5
+
+    SensorDataInput:
+      type: object
+      required:
+        - sensorName
+        - sensorValue
+      properties:
+        sensorName:
+          type: string
+          description: Tên cảm biến
+          example: "Temperature Sensor"
+        sensorValue:
+          type: number
+          format: float
+          description: Giá trị đo được từ cảm biến
+          example: 25.5
+
+    User:
+      type: object
+      properties:
+        _id:
+          type: string
+          description: ID tự động sinh bởi MongoDB
+          example: "6581234567890abcdef67890"
+        userName:
+          type: string
+          description: Tên đăng nhập
+          example: "johndoe"
+        password:
+          type: string
+          description: Mật khẩu
+          example: "password123"
+        email:
+          type: string
+          format: email
+          description: Địa chỉ email
+          example: "john@example.com"
+
+    UserInput:
+      type: object
+      required:
+        - userName
+        - password
+        - email
+      properties:
+        userName:
+          type: string
+          description: Tên đăng nhập
+          example: "johndoe"
+        password:
+          type: string
+          description: Mật khẩu
+          example: "password123"
+        email:
+          type: string
+          format: email
+          description: Địa chỉ email
+          example: "john@example.com"
